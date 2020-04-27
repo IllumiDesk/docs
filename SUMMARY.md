@@ -1,18 +1,24 @@
 # Table of contents
 
-* [ILLUMIDESK OVERVIEW](README.md)
+* [IllumiDesk Overview](README.md)
 
-## GETTING STARTED WITH THE CANVAS LMS
+## Installation and Configuration
 
-* [Step 1: Install IllumiDesk with the Canvas LMS](getting-started-with-the-canvas-lms/step-1-install-illumidesk-with-the-canvas-lms.md)
-* [Step 2: Adding users to your course](getting-started-with-the-canvas-lms/step-2-adding-users-to-your-course.md)
-* [Step 3: Access the Grader Console](getting-started-with-the-canvas-lms/untitled-8.md)
-* [Step 4: Create your First Assignment Source File](getting-started-with-the-canvas-lms/untitled-7.md)
-* [Step 5: Release Assignments to Learners](getting-started-with-the-canvas-lms/untitled-6.md)
-* [Step 6: Add Assignment to Canvas LMS](getting-started-with-the-canvas-lms/untitled-5.md)
-* [Step 7: Fetch and Submit Assignment as Learner](getting-started-with-the-canvas-lms/untitled-4.md)
-* [Step 8: Submit Assignment for Grading](getting-started-with-the-canvas-lms/untitled-3.md)
-* [Step 9: Grade Assignments and Release Feedback](getting-started-with-the-canvas-lms/untitled-2.md)
-* [Step 10: Collect feedback from graders](getting-started-with-the-canvas-lms/untitled-1.md)
-* [Step 11: Send Assignment Grades to LMS](getting-started-with-the-canvas-lms/untitled.md)
+* [Learning Tools Interoperability \(LTI\)](installation-and-configuration/learning-tools-interoperability-lti.md)
+* [Security and Privacy](installation-and-configuration/security-and-privacy.md)
+* [Canvas LMS with LTI 1.1](installation-and-configuration/canvas-lms-lti11.md)
+* [Canvas LMS with LTI 1.3](installation-and-configuration/canvas-lms-lti13.md)
+
+## Assignment Walk Through
+
+* [Step 1: Create a Quickstart Assignment](assignment-walk-through/create-a-quickstart-assignment.md)
+* [Step 2: Access the Grader Console](assignment-walk-through/access-the-grader-console.md)
+* [Step 3: Create your First Assignment Source File](assignment-walk-through/create-your-first-assignment-source-file.md)
+* [Step 4: Release Assignments to Learners](assignment-walk-through/release-assignment-to-learners.md)
+* [Step 5: Add Assignment to your LMS](assignment-walk-through/add-assignment-to-your-lms.md)
+* [Step 6: Fetch and Submit Assignment as Learner](assignment-walk-through/fetch-and-submit-assignment-as-learner.md)
+* [Step 7: Submit Assignment for Grading](assignment-walk-through/submit-assignment-for-grading.md)
+* [Step 8: Grade Assignments and Release Feedback](assignment-walk-through/grade-assignments-and-release-feedback.md)
+* [Step 9: Collect Feedback from Graders](assignment-walk-through/collect-feedback-from-graders.md)
+* [Step 10: Send Assignment Grades to LMS](assignment-walk-through/sent-assignment-grades-to-lms.md)
 
