@@ -2,7 +2,7 @@
 description: Install IllumiDesk with your LMS using the LTI v1.1 standard
 ---
 
-# Learning Tools Interoperability \(LTI\) 1.1
+# Learning Tools Interoperability \(LTI\) v1.1
 
 ## Overview
 
