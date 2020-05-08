@@ -2,7 +2,7 @@
 description: Install IllumiDesk with the Canvas LMS using LTI v1.1
 ---
 
-# Canvas with LTI 1.1
+# Canvas with LTI v1.1
 
 ## Overview
 

@@ -2,7 +2,7 @@
 description: Install IllumiDesk with Moodle using LTI v1.1
 ---
 
-# Moodle with LTI 1.1
+# Moodle with LTI v1.1
 
 To install IllumiDesk with **Moodle** you will need to access your environment with the **Admin** role. Once installed, the IllumiDesk external tool may be added to any number of courses within your Moodle instance.
 
