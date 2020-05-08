@@ -2,12 +2,18 @@
 
 * [IllumiDesk Overview](README.md)
 
+## General Topics
+
+* [Learning Tools Interoperability \(LTI\)](general-topics/learning-tools-interoperability-lti.md)
+* [Security and Privacy](general-topics/security-and-privacy.md)
+
 ## Installation and Configuration
 
-* [Learning Tools Interoperability \(LTI\)](installation-and-configuration/learning-tools-interoperability-lti.md)
-* [Security and Privacy](installation-and-configuration/security-and-privacy.md)
-* [Canvas LMS with LTI 1.1](installation-and-configuration/canvas-lms-lti11.md)
-* [Canvas LMS with LTI 1.3](installation-and-configuration/canvas-lms-lti13.md)
+* [Learning Tools Interoperability \(LTI\) 1.1](installation-and-configuration/canvas-lms-lti11/README.md)
+  * [Canvas with LTI 1.1](installation-and-configuration/canvas-lms-lti11/canvas-lms-lti-11.md)
+  * [Moodle with LTI 1.1](installation-and-configuration/canvas-lms-lti11/moodle-lms-with-lti11.md)
+* [Learning Tools Interoperability \(LTI\) 1.3](installation-and-configuration/learning-tools-interoperability-lti-1.3/README.md)
+  * [Canvas with LTI v1.3](installation-and-configuration/learning-tools-interoperability-lti-1.3/canvas-lms-lti13.md)
 
 ## Assignment Walk Through
 
