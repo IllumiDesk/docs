@@ -1,5 +1,5 @@
 ---
-description: Install IllumiDesk with the Canvas LMS using LTI v1.1
+description: Install IllumiDesk with the Open edX LMS using LTI v1.1
 ---
 
 # Open edX with LTI v1.1
