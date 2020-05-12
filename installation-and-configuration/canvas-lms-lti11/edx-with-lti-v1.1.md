@@ -2,19 +2,19 @@
 description: Install IllumiDesk with the Canvas LMS using LTI v1.1
 ---
 
-# edX with LTI v1.1
+# Open edX with LTI v1.1
 
 ## Overview
 
 For testing, refer to the [test environment keys](./#test-environment) to complete the steps below.
 
 {% hint style="info" %}
-[Refer to edX's official LTI documentation](https://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/latest/exercises_tools/lti_component.html) for more detailed installation and configuration options.
+[Refer to Open edX's official LTI documentation](https://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/latest/exercises_tools/lti_component.html) for more detailed installation and configuration options.
 {% endhint %}
 
 ## Install IllumiDesk as an External Tool
 
-To install IllumiDesk with **edX** you will need to access the **edX Studio** with a user that has privileges to update the application's setup. If you are logging in the for the first time, you may see a **edX Demonstration Course** in the Studio's home page. If not, create a new course by clicking on the `+ New Course` button. Then access your course and follow the steps below to activate IllumiDesk as a tool provider with edX.
+To install IllumiDesk with **Open edX** you will need to access the **Open edX Studio** with a user that has privileges to update the application's setup. If you are logging in the for the first time, you may see an **Open edX Demonstration Course** in the Studio's home page. If not, create a new course by clicking on the `+ New Course` button. Then access your course and follow the steps below to activate **IllumiDesk as a tool provider** with **Open edX**.
 
 1. Log into the Studio and access an existing course or create a new course by clicking on the + New Course button.
 
@@ -40,7 +40,7 @@ To install IllumiDesk with **edX** you will need to access the **edX Studio** wi
 
 4. Click on the **Save** button to update your Settings.
 
-5. With edX, LTI tools are added within a **Course --&gt; Section --&gt; Sub Section --&gt; Unit**. Ensure that you have a **Section** within your course and then add a new **Subsection** by clicking on the **+ Subsection** button.
+5. With Open edX, LTI tools are added within a **Course --&gt; Section --&gt; Sub Section --&gt; Unit**. Ensure that you have a **Section** within your course and then add a new **Subsection** by clicking on the **+ Subsection** button.
 
 ![Add a new Sub Section in a course&apos;s section](../../.gitbook/assets/edx_sub_section.png)
 
@@ -81,7 +81,7 @@ To install IllumiDesk with **edX** you will need to access the **edX Studio** wi
         </p>
       </td>
       <td style="text-align:left">The application&apos;s description.</td>
-      <td style="text-align:left">IllumiDesk Jupyter Notebooks with edX</td>
+      <td style="text-align:left">IllumiDesk Jupyter Notebooks with Open edX</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -106,9 +106,9 @@ To install IllumiDesk with **edX** you will need to access the **edX Studio** wi
       <td style="text-align:left"><b>Custom Parameters</b>
       </td>
       <td style="text-align:left">A key/value pair for any custom parameters. You may use variable substitution
-        such to send information from the edX LMS to map it to standard LTI parameters.</td>
-      <td
-      style="text-align:left">[ &quot;email=$Person.email.primary&quot; ]</td>
+        such to send information from the Open edX LMS to map it to standard LTI
+        parameters.</td>
+      <td style="text-align:left">[ &quot;email=$Person.email.primary&quot; ]</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>LTI Launch Target</b>
@@ -139,7 +139,7 @@ To install IllumiDesk with **edX** you will need to access the **edX Studio** wi
     </tr>
   </tbody>
 </table>{% hint style="info" %}
-The LTI Consumer has descriptions for each item and links to edX's official documentation with more information.
+The LTI Consumer has descriptions for each item and links to Open edX's official documentation with more information.
 {% endhint %}
 
 10. After you have saved your configuration, test the IllumiDesk application launch by clicking on the unit's launch button.
