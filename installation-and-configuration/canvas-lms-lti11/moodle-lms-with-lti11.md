@@ -12,7 +12,7 @@ For testing, refer to the [test environment keys](./#test-environment) to comple
 
 To install IllumiDesk with **Moodle** you will need to access your environment with the **Admin** role. Once installed and activated, the IllumiDesk external tool may be added to any number of courses within your Moodle instance.
 
-1. Log in with a user that has **Admin** privileges. Then, click on **Site Administration -&gt; Plugins -&gt; External Tool -&gt; Manage tools.**
+1. Log in with a user that has **Admin** privileges. Then, click on **Site Administration -&gt; Plugins -&gt; Plugins Overview -&gt; Activity Modules -&gt; External Tool -&gt; Manage tools.**
 
 ![Add IllumiDesk as an External Tool ](../../.gitbook/assets/external_tool_with_moodle.png)
 
