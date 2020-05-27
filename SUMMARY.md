@@ -11,8 +11,8 @@
 
 * [Learning Tools Interoperability \(LTI\) v1.1](installation-and-configuration/canvas-lms-lti11/README.md)
   * [Canvas with LTI v1.1](installation-and-configuration/canvas-lms-lti11/canvas-lms-lti-11.md)
-  * [Open edX with LTI v1.1](installation-and-configuration/canvas-lms-lti11/open-edx-with-lti-v1.1.md)
   * [Moodle with LTI v1.1](installation-and-configuration/canvas-lms-lti11/moodle-lms-with-lti11.md)
+  * [Open edX with LTI v1.1](installation-and-configuration/canvas-lms-lti11/open-edx-with-lti-v1.1.md)
 * [Learning Tools Interoperability \(LTI\) v1.3](installation-and-configuration/learning-tools-interoperability-lti-1.3/README.md)
   * [Canvas with LTI v1.3](installation-and-configuration/learning-tools-interoperability-lti-1.3/canvas-lms-lti13.md)
 
