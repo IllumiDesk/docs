@@ -32,11 +32,15 @@ If you or your LMS administrator has access to the IllumiDesk App Center applica
 1. To install IllumiDesk from the App Center, navigate to **Course --&gt; Settings --&gt; Apps --&gt; View App Center.**
 2. Type `illumidesk` in the search text field
 3. Click on the **IllumiDesk** application icon
-4. Click on the **+ Add App** button
-5. Enter the consumer key and shared secret in the available modal
-6. Confirm by clicking on Add App
 
-![](../../.gitbook/assets/screen-shot-2020-04-27-at-10.16.56-am.png)
+![IllumiDesk in App Center](../../.gitbook/assets/screen-shot-2020-05-27-at-4.51.46-pm.png)
+
+   4. Click on the **IllumiDesk Card**  
+   5. Click on the + Add App button  
+   ****6**.** Enter the consumer key and shared secret in the available modal  
+   7. Confirm by clicking on Add App
+
+![Installation form from App Center](../../.gitbook/assets/screen-shot-2020-04-27-at-10.16.56-am.png)
 
 {% hint style="info" %}
 If you would like to take advantage of IllumiDesk's latest features then we recommend installing IllumiDesk with the newer LTI 1.3 standard.
