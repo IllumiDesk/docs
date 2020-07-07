@@ -138,7 +138,9 @@ To install IllumiDesk with **Open edX** you will need to access the **Open edX S
       style="text-align:left">1.0</td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 The LTI Consumer has descriptions for each item and links to Open edX's official documentation with more information.
 {% endhint %}
 

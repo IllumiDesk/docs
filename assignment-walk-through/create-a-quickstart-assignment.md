@@ -4,12 +4,16 @@ description: Create a quickstart assignment using the nbgrader tool.
 
 # Step 1: Create a Quickstart Assignment
 
-Fortunately creating a Quick Start assignment is super simple! If you haven't done so already, make sure you have installed IllumiDesk as a tool with your Learning Management System \(LMS\).
+Fortunately creating a Quickstart assignment is super simple! If you haven't done so already, make sure you have installed [IllumiDesk as a tool with your Learning Management System \(LMS\)](../general-topics/learning-tools-interoperability-lti.md#illumidesk-integrations-with-lti).
 
 * From within the LMS, click on the IllumiDesk menu item or link within your course
-* Open your shared grader notebook from the IllumiDesk control panel by clicking on `Services --> Course Name`, where course name corresponds to your LMS course in lower case characters.
+* Open your shared grader notebook from the IllumiDesk control panel by clicking on `Grader Notebook --> Course Name`, where course name corresponds to your LMS course in lower case characters.
 
-![Access the shared grader notebook](../.gitbook/assets/screen-shot-2020-04-27-at-10.29.00-am.png)
+![Select the shared grader notebook](../.gitbook/assets/select_grader_notebook.png)
+
+{% hint style="info" %}
+The Grader Notebook will display the **LTI 1.1**`course_label`value or the **LTI 1.3** `https://purl.imsglobal.org/spec/lti/claim/context --> label` value.
+{% endhint %}
 
 * Click on `New --> Terminal`
 
