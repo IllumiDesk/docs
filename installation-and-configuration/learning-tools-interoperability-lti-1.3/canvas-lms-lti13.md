@@ -34,7 +34,15 @@ Please refrain from using the Manual option to create a new Developer Key. The I
 https://my.illumidesk.com/hub/lti13/config
 ```
 
-![Update LTI key with JSON URL](../../.gitbook/assets/key_settings.png)
+All fields will populate except the Redirect URIs field. The Redirect URI should have:
+
+```text
+https://my.illumidesk.com/hub/oauth_callback
+```
+
+The **Key Settings** should look like the screenshot below:
+
+![LTI Developer Key \(LTI 1.3\)](../../.gitbook/assets/lti13_developer_key.png)
 
 Also, enter an identifiable key name and, optionally, an owner email to identify the application owner within your organization.
 
@@ -103,9 +111,6 @@ The fields below contain a summary of the application's settings with sensible d
 | **Course Navigation** —&gt; **Target Link URI** | [https://my.illumidesk.com/hub/](https://my.illumidesk.com/hub/
 
 ) |
-| **Assignment Selection** —&gt; **Target Link URI**  | [https://my.illumidesk.com/hub/file-select ](https://my.illumidesk.com/hub/file-select
-
-)  |
 
 That's it! Once IllumiDesk is activated within your course all data will securely sync between systems using the LTI 1.3 standard.
 
