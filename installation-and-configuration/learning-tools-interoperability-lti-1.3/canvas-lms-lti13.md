@@ -14,7 +14,7 @@ These steps are usually completed by the LMS's administrator.
 
 ## Create the Developer Key with URL Configuration Option
 
-The **URL Configuration** option is a JSON file which contains the application's configuration settings as well as the JSON Web Key \(JWK\). The JWK is a public key which is used to verify signed requests from the tool.
+The **URL Configuration** option is a JSON file that contains the application's configuration settings as well as the JSON Web Key \(JWK\). The JWK is a public key that is used to verify signed requests from the tool.
 
 {% hint style="warning" %}
 Please refrain from using the Manual option to create a new Developer Key. The IllumiDesk tool requires a launch into a new window for the best user experience. There have also been reports of [SameSite cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite#Secure) errors with the latest browser versions.
@@ -31,7 +31,7 @@ Please refrain from using the Manual option to create a new Developer Key. The I
   3. In **Key Settings**, select **Method -&gt; Enter URL** and copy/paste the LTI 1.3 configuration link:
 
 ```text
-https://my.illumidesk.com/hub/jwks
+https://my.illumidesk.com/hub/lti13/config
 ```
 
 ![Update LTI key with JSON URL](../../.gitbook/assets/key_settings.png)
@@ -95,7 +95,7 @@ The fields below contain a summary of the application's settings with sensible d
 
 ) |
 | **LTI Advantage Services** | \(Recommended\) Toggle all options to the on position. |
-| **JWK Method** —&gt; **Public JWK URL** | [https://my.illumidesk.com/hub/jwks](https://my.illumidesk.com/hub/jwks
+| **JWK Method** —&gt; **Public JWK URL** | [https://my.illumidesk.com/hub/lti13/jwks](https://my.illumidesk.com/hub/jwks
 
 ) |
 | **Privacy Settings** | `Public` |
