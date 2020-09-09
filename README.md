@@ -4,7 +4,7 @@ description: How IllumiDesk works and what sets it apart from other solutions.
 
 # IllumiDesk Overview
 
-IllumiDesk streamlines the integration of [Jupyter Notebooks](https://jupyter.org/) with [LTI compliant](https://www.imsglobal.org/activity/learning-tools-interoperability) Learning Management Systems. IllumiDesk is currently certified with the LTI 1.3 Advantage standard and have tested the the integration with the leading LMS's in the market.
+IllumiDesk streamlines the integration of [Jupyter Notebooks](https://jupyter.org/) with [LTI compliant](https://www.imsglobal.org/activity/learning-tools-interoperability) Learning Management Systems. IllumiDesk is currently certified with the LTI 1.3 Advantage standard and has tested the integration with the leading LMS's in the market.
 
 ## What can I do with IllumiDesk?
 
