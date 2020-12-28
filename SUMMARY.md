@@ -31,8 +31,9 @@
 
 ## IllumiDesk Enterprise Edition
 
-* [Introduction](illumidesk-enterprise-edition/introduction.md)
-* [System Requirements](illumidesk-enterprise-edition/system-requirements.md)
-* [Initial Installation](illumidesk-enterprise-edition/installation-admin-portal-and-stack.md)
-* [Enable a TLS Certificate for your Admin Console](illumidesk-enterprise-edition/enable-a-tls-certificate-for-your-admin-console.md)
+* [Introduction](illumidesk-enterprise-edition/ee-introduction.md)
+* [System Requirements](illumidesk-enterprise-edition/ee-system-requirements.md)
+* [Initial Installation](illumidesk-enterprise-edition/ee-installation-admin-portal-and-stack.md)
+* [Enable a TLS Certificate for your Admin Console](illumidesk-enterprise-edition/ee-enable-a-tls-certificate-for-your-admin-console.md)
+* [Advanced Options](illumidesk-enterprise-edition/ee-advanced-options.md)
 

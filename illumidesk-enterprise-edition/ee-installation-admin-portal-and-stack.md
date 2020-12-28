@@ -39,7 +39,7 @@ Once the script executes it will execute a series of tasks to complete the Admin
 * Installs the application itself within the cluster into a dedicated namespace.
 * Prompts the user to confirm a password to access the Admin Console.
 
-Once you have completed this step then you can proceed to configure a[ TLS certification for the Admin Console](enable-a-tls-certificate-for-your-admin-console.md).
+Once you have completed this step then you can proceed to configure a[ TLS certification for the Admin Console](ee-enable-a-tls-certificate-for-your-admin-console.md).
 
 ## Embedded Kubernetes Installation
 
@@ -77,5 +77,5 @@ The **&lt;ip&gt;** mentioned above refers to the instance's external IP address.
 Sometimes the Admin Portal will not load with the first attempt due to timeout issues due to internal security rules. In these cases, it may help run the installation command above and try again.
 {% endhint %}
 
-Once you have completed installing the cluster with the embedded \(stand-alone\) option, then you can proceed to configure a[ TLS certification for the Admin Console](enable-a-tls-certificate-for-your-admin-console.md).
+Once you have completed installing the cluster with the embedded \(stand-alone\) option, then you can proceed to configure a[ TLS certification for the Admin Console](ee-enable-a-tls-certificate-for-your-admin-console.md).
 
