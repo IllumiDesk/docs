@@ -29,3 +29,10 @@
 * [Step 9: Collect Feedback from Graders](assignment-walk-through/collect-feedback-from-graders.md)
 * [Step 10: Send Assignment Grades to LMS](assignment-walk-through/sent-assignment-grades-to-lms.md)
 
+## IllumiDesk Enterprise Edition
+
+* [Introduction](illumidesk-enterprise-edition/introduction.md)
+* [System Requirements](illumidesk-enterprise-edition/system-requirements.md)
+* [Initial Installation](illumidesk-enterprise-edition/installation-admin-portal-and-stack.md)
+* [Enable a TLS Certificate for your Admin Console](illumidesk-enterprise-edition/enable-a-tls-certificate-for-your-admin-console.md)
+
