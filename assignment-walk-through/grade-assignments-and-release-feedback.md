@@ -1,12 +1,10 @@
 # Step 8: Grade Assignments and Release Feedback
 
-
-
-### Automated Grading vs Manual Grading
+## Automated Grading vs Manual Grading
 
 As the name implies, the automated grading service automates grading tasks. This is a huge time saver, particularly for organizations that have large numbers of remote students. Manual grading consists of having a human review and grade assignment answers. Graders also have the option of adding comments to the Jupyter Notebook file so students have more insight on the accuracy of their answers.
 
-### Collect Submitted Assignments
+## Collect Submitted Assignments
 
 After all \(hopefully\) students have submitted their assignments, the grader needs to collect the assignments so that they can complete the grading tasks. At first, it will look like there are no submissions since the number of submissions is set to 0:
 
@@ -16,7 +14,7 @@ After clicking on the icon located in the `Collect` column, the `# Submissions` 
 
 ![Number of assignments submitted by learners](https://files.readme.io/60e59e3-collect_assignment_submissions_1.png)
 
-### Auto-Grade Assignments
+## Auto-Grade Assignments
 
 After collecting the assignments click on the integer value within the `# Submissions` column to view the submissions in a table, where the rows represent the student and the actions you can take for each student submission.
 
@@ -28,7 +26,7 @@ Once the Auto-Grading service completes, a modal will appear letting you know th
 
 ![Indicators which let the grader user know that there are manual grading tasks pending.](https://files.readme.io/1bdd137-Screen_Shot_2020-02-15_at_3.07.14_PM.png)
 
-### Access Manual Grading Interface
+## Access Manual Grading Interface
 
 To get started with manual grading, click on the link in the `Student Name` column. If the student does not have a first name or last name then the `None, None` values appear instead. Click on this link to open the learner's assignment items, which in this case are `Problem1` and `Problem2`.
 
@@ -46,12 +44,12 @@ Let's go ahead and start the **manual grading process** by clicking on one of th
 
 The manual grading interface is where graders can provide additional feedback, regardless of whether the cell was set up for manual or auto-grading!
 
-### Manually Add Feedback and Confirm Points
+## Manually Add Feedback and Confirm Points
 
 Cells that were defined as `Automated Answers` when setting up the original source assignment are titled `Student's Answer`. **The grader may add comments to this cell**, even though the cell has already been graded by the auto-grader. This is also known as providing `Feedback`. \(In the next section, we will go over how to distribute this feedback back to the learners\):
 
 {% hint style="warning" %}
-#### Overriding Points Results
+### Overriding Points Results
 
 It is possible that the auto-grader completed all tasks successfully and that the service did not encounter or return any errors during the process, but rather, the tests to grade the student's solutions were not defined properly by the grader. These are the situations where it may make sense to override the calculated grade in the screenshot above.
 {% endhint %}
@@ -68,7 +66,7 @@ Let's complete the grading process by adding some comments with markdown. Adding
 
 Your comments and points values are automatically saved once you click on the `Next` button and have finished viewing the last `Notebook ID` within the assignment.
 
-### Release Feedback to Your Learners
+## Release Feedback to Your Learners
 
 Before we move on to the next section, where we will collect feedback as students let's click on the icon located in the `Generate Feedback` column to send feedback to your students. Students can then collect feedback \(although they aren't forced to\) to enhance their understanding of the material.
 

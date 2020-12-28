@@ -20,15 +20,15 @@ To install IllumiDesk with **Open edX** you will need to access the **Open edX S
 
 ![Click on an existing course or add a new course to initiate LTI setup](../../.gitbook/assets/edx_studio_home%20%281%29.png)
 
-2. Click on the **Settings** dropdown and select **Advanced Settings** in the course's home page.
+1. Click on the **Settings** dropdown and select **Advanced Settings** in the course's home page.
 
 ![Course Advanced Settings](../../.gitbook/assets/edx_course_advanced_settings.png)
 
-3. In the **Advanced Module List** section, add the **"lti\_consumer"** key \(include quotes\).
+1. In the **Advanced Module List** section, add the **"lti\_consumer"** key \(include quotes\).
 
 ![Add lti\_consumer in Advanced Module List](../../.gitbook/assets/edx_advanced_module_list.png)
 
-4. In the LTI Passports section, add the LTI tool's name, consumer key, and shared secret separated by commas. Each value should include quotes. For example:
+1. In the LTI Passports section, add the LTI tool's name, consumer key, and shared secret separated by commas. Each value should include quotes. For example:
 
 ```text
 [
@@ -38,25 +38,24 @@ To install IllumiDesk with **Open edX** you will need to access the **Open edX S
 
 ![LTI Passports ](../../.gitbook/assets/edx_lti_passport.png)
 
-4. Click on the **Save** button to update your Settings.
-
-5. With Open edX, LTI tools are added within a **Course --&gt; Section --&gt; Sub Section --&gt; Unit**. Ensure that you have a **Section** within your course and then add a new **Subsection** by clicking on the **+ Subsection** button.
+1. Click on the **Save** button to update your Settings.
+2. With Open edX, LTI tools are added within a **Course --&gt; Section --&gt; Sub Section --&gt; Unit**. Ensure that you have a **Section** within your course and then add a new **Subsection** by clicking on the **+ Subsection** button.
 
 ![Add a new Sub Section in a course&apos;s section](../../.gitbook/assets/edx_sub_section.png)
 
-6. Then, add a new **Unit** within your **Subsection** by clicking on the **+Unit** button. This will display a set of green action buttons to configure your Unit. Click on the **Advanced** button.
+1. Then, add a new **Unit** within your **Subsection** by clicking on the **+Unit** button. This will display a set of green action buttons to configure your Unit. Click on the **Advanced** button.
 
 ![Course -&amp;gt; Section - Subsection -&amp;gt; Unit Advanced configuration](../../.gitbook/assets/edx_unit_advanced_settings.png)
 
-7. Select the **LTI Consumers** option from the selection pane.
+1. Select the **LTI Consumers** option from the selection pane.
 
 ![Select LTI Consumer](../../.gitbook/assets/edx_unit_advanced_advanced_lti_consumer.png)
 
-8. Selecting the **LTI Consumer** option will add the LTI Consumer to your Unit. Click on the **Edit** button to add the final touches to **IllumiDesk's LTI Consumer** configuration.
+1. Selecting the **LTI Consumer** option will add the LTI Consumer to your Unit. Click on the **Edit** button to add the final touches to **IllumiDesk's LTI Consumer** configuration.
 
 ![LTI Consumer in Course --&amp;gt; Section --&amp;gt; Subsection --&amp;gt; Unit](../../.gitbook/assets/edx_lti_consumer_displayed_in_unit.png)
 
-9. Add values for the LTI Consumer settings form. Some items, such as Inline Height, are not applicable so have been removed from the list below.
+1. Add values for the LTI Consumer settings form. Some items, such as Inline Height, are not applicable so have been removed from the list below.
 
 <table>
   <thead>
@@ -75,19 +74,13 @@ To install IllumiDesk with **Open edX** you will need to access the **Open edX S
       <td style="text-align:left">IllumiDesk</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>LTI Application Information</b>
-        </p>
+      <td style="text-align:left"><b>LTI Application Information</b>
       </td>
       <td style="text-align:left">The application&apos;s description.</td>
       <td style="text-align:left">IllumiDesk Jupyter Notebooks with Open edX</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p><b>LTI ID</b>
-        </p>
+      <td style="text-align:left"><b>LTI ID</b>
       </td>
       <td style="text-align:left">The LTI ID entered in the Passports section of the course&apos;s Advanced
         Settings page.</td>
@@ -144,9 +137,9 @@ To install IllumiDesk with **Open edX** you will need to access the **Open edX S
 The LTI Consumer has descriptions for each item and links to Open edX's official documentation with more information.
 {% endhint %}
 
-10. After you have saved your configuration, test the IllumiDesk application launch by clicking on the unit's launch button.
+1. After you have saved your configuration, test the IllumiDesk application launch by clicking on the unit's launch button.
 
 ![Launch IllumiDesk test](../../.gitbook/assets/edx_launch_tool.png)
 
-11. To complete your installation click on the **Publish** button. 
+1. To complete your installation click on the **Publish** button. 
 

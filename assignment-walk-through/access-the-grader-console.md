@@ -66,11 +66,11 @@ There are two ways to get to the shared grader notebook:
 
 ![Instructor&apos;s course tab with courses available for shared grading](../.gitbook/assets/0032.png)
 
- You can also access the shared grader notebook by clicking on the `Control Panel` button and then on the `Services` dropdown option:
+You can also access the shared grader notebook by clicking on the `Control Panel` button and then on the `Services` dropdown option:
 
 ![Home page with Jupyter Notebook session open and access to Control Panel button.](../.gitbook/assets/0033.png)
 
- The screenshot below only has one example. If the user with the `Instructor` role is a member of the grader group in more than one course, then those courses would also appear in the dropdown:
+The screenshot below only has one example. If the user with the `Instructor` role is a member of the grader group in more than one course, then those courses would also appear in the dropdown:
 
 ![Services course item to access shared grader notebook.](../.gitbook/assets/0034.png)
 
@@ -96,6 +96,5 @@ IllumiDesk offers support for GPU instances to those customers that require them
 
 Congrats! You now have the `Grader Console` open which you can use to complete your assignment related tasks.
 
-In the next section, we will create a student version of the Jupyter Notebook assignment and distribute it to them.  
-
+In the next section, we will create a student version of the Jupyter Notebook assignment and distribute it to them.
 

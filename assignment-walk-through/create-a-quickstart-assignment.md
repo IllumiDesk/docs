@@ -28,5 +28,3 @@ The Grader Notebook will display the **LTI 1.1**`course_label`value or the **LTI
 
 In the next section we will use this test assignment to emulate creating the source file, generate the student version of the assignment and release the assignment to the course's students.
 
-
-

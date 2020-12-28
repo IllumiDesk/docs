@@ -24,11 +24,11 @@ Please refrain from using the Manual option to create a new Developer Key. The I
 
 ![Canvas Developer Keys](../../.gitbook/assets/canvas_developer_key.png)
 
-  2. Click on the **+ Developer Key** button and select the **+ LTI Key**:
+1. Click on the **+ Developer Key** button and select the **+ LTI Key**:
 
 ![Add LTI Key](../../.gitbook/assets/lti_button.png)
 
-  3. In **Key Settings**, select **Method -&gt; Enter URL** and copy/paste the LTI 1.3 configuration link:
+1. In **Key Settings**, select **Method -&gt; Enter URL** and copy/paste the LTI 1.3 configuration link:
 
 ```text
 https://my.illumidesk.com/hub/lti13/config
@@ -54,7 +54,7 @@ Customers with dedicated environments use a **custom sub-domain** to identify th
 All settings are populated automatically by interpreting the JSON configuration file except for the **Redirect URIs** field. Ensure that you have added the correct value to this field before proceeding to the next steps.
 {% endhint %}
 
-4. Take note of the value in the **Account --&gt; Details** column of the **Developer Keys** page. You will need this value, known as the **Client ID**, when installing the IllumiDesk application within your course.
+1. Take note of the value in the **Account --&gt; Details** column of the **Developer Keys** page. You will need this value, known as the **Client ID**, when installing the IllumiDesk application within your course.
 
 ![](../../.gitbook/assets/canvas_developer_key_client_id.png)
 
@@ -63,14 +63,12 @@ All settings are populated automatically by interpreting the JSON configuration 
 With the **Client ID** in hand, navigate to the Course where you wish to activate the IllumIDesk application.
 
 1. Click on **&lt;Course Name&gt; --&gt;** **Settings --&gt; Apps --&gt; View App Configurations --&gt; + Add** to open the **Add App** form where **&lt;Course Name&gt;** corresponds to the course's name \(also known as course label\) within your Canvas account.
-
 2. Select **By Client ID** in the **Configuration Type** dropdown menu. Add the **Client ID** obtained **Step 4**.
 
 ![Enter Client ID from Developer Keys section](../../.gitbook/assets/add_application_modal.png)
 
-3. Click **Submit** to update your course with the IllumiDesk application.
-
-4. Sent the **Client ID's** value to [support@illumidesk.com](mailto:support@illumidesk.com). An IllumiDesk representative will update the environment with the **Client ID** key to complete the installation.
+1. Click **Submit** to update your course with the IllumiDesk application.
+2. Sent the **Client ID's** value to [support@illumidesk.com](mailto:support@illumidesk.com). An IllumiDesk representative will update the environment with the **Client ID** key to complete the installation.
 
 That's it! Once IllumiDesk is activated within your course all data will securely sync between systems using the LTI 1.3 standard.
 
@@ -80,8 +78,7 @@ If you would like to update the Developer Key's settings then there are two opti
 
 * Update the Developer Key settings with the settings form.
 * Update the Developer Key with a new JSON configuration file.
-
-1. Click on the **Edit** icon to update your Developer Key
+* Click on the **Edit** icon to update your Developer Key
 
 ![Edit an existing Developer Key](../../.gitbook/assets/edit_developer_key.png)
 
@@ -91,32 +88,27 @@ Some customers report that updating an existing developer key with a new JSON co
 
 The fields below contain a summary of the application's settings with sensible defaults. For custom domains, replace the `my` portion of the `my.illumidesk.com` domain with your custom sub-domain.
 
-| Field Name  | Value  |
+| Field Name | Value |
 | :--- | :--- |
-| **Redirect URI** | [https://my.illumidesk.com/hub/oauth\_callback](https://my.illumidesk.com/hub/oauth_callback
+| **Redirect URI** | \[[https://my.illumidesk.com/hub/oauth\_callback](https://my.illumidesk.com/hub/oauth_callback) |
 
-) |
-| **Target Link URI** | [https://my.illumidesk.com/hub](https://my.illumidesk.com/hub
+\]\([https://my.illumidesk.com/hub/oauth\_callback](https://my.illumidesk.com/hub/oauth_callback)
 
-) |
-| **OpenID Connect Initiation Url** | [https://my.illumidesk.com/hub/oauth\_login](https://my.illumidesk.com/hub/oauth_login
+\) \| \| **Target Link URI** \| \[[https://my.illumidesk.com/hub](https://my.illumidesk.com/hub) \]\([https://my.illumidesk.com/hub](https://my.illumidesk.com/hub)
 
-) |
-| **LTI Advantage Services** | \(Recommended\) Toggle all options to the on position. |
-| **JWK Method** —&gt; **Public JWK URL** | [https://my.illumidesk.com/hub/lti13/jwks](https://my.illumidesk.com/hub/jwks
+\) \| \| **OpenID Connect Initiation Url** \| \[[https://my.illumidesk.com/hub/oauth\_login](https://my.illumidesk.com/hub/oauth_login) \]\([https://my.illumidesk.com/hub/oauth\_login](https://my.illumidesk.com/hub/oauth_login)
 
-) |
-| **Privacy Settings** | `Public` |
-| **Placements** | `Course Navigation`, `Assignment Selection` |
-| **Course Navigation** —&gt; **Target Link URI** | [https://my.illumidesk.com/hub/](https://my.illumidesk.com/hub/
+\) \| \| **LTI Advantage Services** \| \(Recommended\) Toggle all options to the on position. \| \| **JWK Method** —&gt; **Public JWK URL** \| \[[https://my.illumidesk.com/hub/lti13/jwks](https://my.illumidesk.com/hub/lti13/jwks) \]\([https://my.illumidesk.com/hub/jwks](https://my.illumidesk.com/hub/jwks)
 
-) |
+\) \| \| **Privacy Settings** \| `Public` \| \| **Placements** \| `Course Navigation`, `Assignment Selection` \| \| **Course Navigation** —&gt; **Target Link URI** \| \[[https://my.illumidesk.com/hub/](https://my.illumidesk.com/hub/) \]\([https://my.illumidesk.com/hub/](https://my.illumidesk.com/hub/)
+
+\) \|
 
 That's it! Once IllumiDesk is activated within your course all data will securely sync between systems using the LTI 1.3 standard.
 
 Interested? Click on the link below to request your trial account today!
 
-{% embed url="https://www.illumidesk.com/getstarted" %}
+{% embed url="https://www.illumidesk.com/getstarted" caption="" %}
 
 ## What's Next?
 

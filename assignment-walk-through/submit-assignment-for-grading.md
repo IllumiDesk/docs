@@ -1,6 +1,6 @@
 # Step 7: Submit Assignment for Grading
 
-### Open Fetched Assignment
+## Open Fetched Assignment
 
 As a learner, open the fetched assignment to start working on completing all solutions:
 
@@ -16,7 +16,7 @@ To speed things up a bit copy/paste the answers below for the auto-graded cells.
 def squares(n):
     """Compute the squares of numbers from 1 to n, such that the 
     ith element of the returned list equals i^2.
-    
+
     """
     if n < 1:
         raise ValueError("n must be greater than or equal to 1")
@@ -45,7 +45,7 @@ If the validation steps resulted in an error, it should display a modal with som
 
 ![Assignment validation error](https://files.readme.io/f94787c-validation_results.png)
 
-#### Validation by Running All Cells
+### Validation by Running All Cells
 
 {% hint style="warning" %}
 You can also validate the assignment file by running all cells. However, the validate button adds a more summarized view of where the failure occurred and why it occurred to give the learner more context. Running all cells will simply return the stack trace as cell output within the Jupyter Notebook file and those results are not available from within the Assignment tab.
@@ -55,6 +55,5 @@ You don't have to validate the assignment before submitting it, but its recommen
 
 ![Multiple submissions from learners with the student role.](https://files.readme.io/366324c-submit_assignment_multiple_timestamps.png)
 
-Whew! We've accomplished a lot so far and we are getting close to finishing the full grading process. In the next step, we will collect submitted assignments from students and grade them \(both automatically and manually\), provide feedback and release the feedback back to the students.  
-
+Whew! We've accomplished a lot so far and we are getting close to finishing the full grading process. In the next step, we will collect submitted assignments from students and grade them \(both automatically and manually\), provide feedback and release the feedback back to the students.
 

@@ -16,10 +16,10 @@ Clicking on the assignment name within the `Name` column will open a Jupyter Not
 
 ![Assignment file located within the source directory.file located within the source directory.](https://files.readme.io/6d748e4-Screen_Shot_2020-02-14_at_12.33.25_PM.png)
 
-#### Browser Tabs
+### Browser Tabs
 
 {% hint style="info" %}
-#### Browser Tabs
+### Browser Tabs
 
 At this point, you may be wondering why so many browser tabs are open. We are aware that this could lead to confusion and are working hard on providing you with a more seamless workflow. Stay tuned!
 {% endhint %}
@@ -62,7 +62,7 @@ raise NotImplementedError
 If the student doesn't add an answer, the auto-grader service will assign 0 points for the cell that contains the auto-graded test for the solution.
 
 {% hint style="info" %}
-#### Code Comments
+### Code Comments
 
 Make sure you use the correct code comments for the programming language in use by your Jupyter Notebook kernel. For example `###` for Python and `//` for Javascript. If you don't add comments for the solution region, then the auto-grader service will replace all cell contents with `YOUR ANSWER HERE`.
 {% endhint %}
@@ -86,7 +86,7 @@ The `Validate` button is located in the Jupyter Notebooks cell toolbar:
 The auto-grader service will hide answers located between the `=== BEGIN MARK SCHEME ===` and `=== END MARK SCHEME ===` region. This allows teachers to view answers during manual grading.
 
 {% hint style="warning" %}
-#### Manual vs Auto Grader Syntax
+### Manual vs Auto Grader Syntax
 
 You may have noted the use of the `===` for the mark scheme region above. Unlike the auto-graded answer and test regions, the manually graded regions _must_ include these three equal symbols before and after the mark scheme region.
 {% endhint %}
@@ -94,13 +94,12 @@ You may have noted the use of the `===` for the mark scheme region above. Unlike
 The `Points` text box is available for cells defined as `Autograder tests` and `Manually graded tests`. The sum of these integers is located at the top of the Jupyter Notebook, within the cell toolbar:
 
 {% hint style="info" %}
-#### One Assignment, Multiple Notebooks
+### One Assignment, Multiple Notebooks
 
 One assignment may contain multiple Jupyter Notebook files. Nevertheless, these files may reference other files, such as CSV data sets within the same folder or as publicly available URLs.
 {% endhint %}
 
 ## Create your Own Source File
 
-Feel free to create your own version or update the file itself. Make sure to save your work before moving on to the next step, which is to release the assignment to your learners!  
-
+Feel free to create your own version or update the file itself. Make sure to save your work before moving on to the next step, which is to release the assignment to your learners!
 

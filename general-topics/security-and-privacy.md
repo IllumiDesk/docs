@@ -47,7 +47,7 @@ Once grades and/or assignments are sent to the LMS, the user ids are associated 
 Many organizations have dedicated Learning Management System \(LMS\) administrators which must comply with various requirements before approving an External Tool installation. This process may take days or it may take months depending on the organization.
 
 {% hint style="success" %}
-#### LMS Sandboxes
+### LMS Sandboxes
 
 IllumiDesk may offer some of the more popular LMS's with a developer license. Please contact us if you need access to an LMS while the vetting process completes.
 {% endhint %}

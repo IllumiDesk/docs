@@ -30,5 +30,3 @@ It's possible that you may encounter intermittent connections during heavy loads
 
 The same steps above apply if you would rather install IllumiDesk with dedicated resources. The only variables that change are the consumer key / shared secret pair and the configuration URL will reflect the configuration settings required to access these dedicated resources.
 
-
-

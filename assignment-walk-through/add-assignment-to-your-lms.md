@@ -4,9 +4,7 @@ description: Add an assignment to the LMS's course.
 
 # Step 5: Add Assignment to your LMS
 
-
-
-### Add Assignment Link in the Canvas Course
+## Add Assignment Link in the Canvas Course
 
 With your assignments generated and released to your learners, your task now focuses on delivering those links to your students for easy access.
 

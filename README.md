@@ -10,7 +10,7 @@ IllumiDesk streamlines the integration of [Jupyter Notebooks](https://jupyter.or
 
 IllumiDesk allows LMS admins, instructors, teachers assistants, graders, and learners to seamlessly collaborate using Jupyter Notebooks within the LMS.
 
-#### Features 
+### Features
 
 * Support for multiple languages and frameworks, including Python3, R, C++, and Julia.
 * Combine manual and automated grading and provide feedback to students directly within the Jupyter Notebook file
@@ -26,17 +26,17 @@ We are just getting started! If you would like to see something added, feel free
 
 ## Who uses IllumiDesk?
 
-*  **Teachers** who want to augment their courses with interactive Jupyter Notebooks.
-*  **Teachers Assistants** that wish to streamline grading and guidance efforts.
-*  **Students** who wish to use Jupyter Notebooks to complete their assignments and submit them directly to the LMS hassle free.
-*  **LMS admin teams** who need a secure and certified Jupyter Notebook add-on for their LMS instance.
+* **Teachers** who want to augment their courses with interactive Jupyter Notebooks.
+* **Teachers Assistants** that wish to streamline grading and guidance efforts.
+* **Students** who wish to use Jupyter Notebooks to complete their assignments and submit them directly to the LMS hassle free.
+* **LMS admin teams** who need a secure and certified Jupyter Notebook add-on for their LMS instance.
 
 ## What sets IllumiDesk apart?
 
 IllumiDesk is hyper-focused on helping instructors and learners share [Jupyter Notebook](https://jupyter.org/) files with the [LTI compliant](https://www.imsglobal.org/basic-overview-how-lti-works) LMS's and as such offers features not available with other solutions.
 
 {% hint style="success" %}
-#### AutoGrader now in General Availability
+### AutoGrader now in General Availability
 
 The new automated grading feature for Jupyter Notebooks is now generally available! We have tested the auto-grader with multiple organizations over the course of the last year. This milestone would not have been possible without the help of our amazing community. Thank you!
 {% endhint %}
@@ -48,8 +48,5 @@ Our documentation is separated into collections:
 * Installation and Configuration
 * Assignment Walkthrough
 
-If you have any additional questions please drop us a line in our Slack channel. We would be glad to provide you with additional information or schedule a live demo!  
-
-
-#### 
+If you have any additional questions please drop us a line in our Slack channel. We would be glad to provide you with additional information or schedule a live demo!
 

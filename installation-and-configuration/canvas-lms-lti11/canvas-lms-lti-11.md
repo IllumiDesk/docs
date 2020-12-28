@@ -6,10 +6,10 @@ description: Install IllumiDesk with the Canvas LMS using LTI v1.1
 
 ## Overview
 
-You may either use the IllumiDesk application available in the **App Center** or install the application using the **By URL** configuration type option. 
+You may either use the IllumiDesk application available in the **App Center** or install the application using the **By URL** configuration type option.
 
 {% hint style="info" %}
-Most Canvas instances do not surface all applications available in the **App Center** by default so you will most likely install IllumiDesk with the **Configuration Type --&gt; By URL** option. 
+Most Canvas instances do not surface all applications available in the **App Center** by default so you will most likely install IllumiDesk with the **Configuration Type --&gt; By URL** option.
 {% endhint %}
 
 For testing, refer to the [test environment keys](./#test-environment) to complete the steps below.
@@ -35,10 +35,12 @@ If you or your LMS administrator has access to the IllumiDesk App Center applica
 
 ![IllumiDesk in App Center](../../.gitbook/assets/screen-shot-2020-05-27-at-4.51.46-pm.png)
 
-   4. Click on the **IllumiDesk Card**  
-   5. Click on the + Add App button  
-   ****6**.** Enter the consumer key and shared secret in the available modal  
-   7. Confirm by clicking on Add App
+1. Click on the **IllumiDesk Card**  
+2. Click on the + Add App button  
+
+   **\*\*6**.\*\* Enter the consumer key and shared secret in the available modal  
+
+3. Confirm by clicking on Add App
 
 ![Installation form from App Center](../../.gitbook/assets/screen-shot-2020-04-27-at-10.16.56-am.png)
 

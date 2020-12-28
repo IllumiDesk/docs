@@ -7,11 +7,11 @@ description: >-
 
 # Learning Tools Interoperability \(LTI\)
 
-### IllumiDesk Integrations with LTI
+## IllumiDesk Integrations with LTI
 
 Think of IllumiDesk as the [LTI compliant](https://www.imsglobal.org/activity/learning-tools-interoperability) bridge between your `Learning Management System (LMS)` and `Jupyter Notebooks`. There are two versions of the LTI standard: LTI 1.1 and LTI 1.3. IllumiDesk supports both versions of the LTI standard. This document will help you get a better grasp on the LTI standard to help determine which option is best for you.
 
-### Learning Tools Interoperability \(LTI\) Overview
+## Learning Tools Interoperability \(LTI\) Overview
 
 There are two main actors once you establish an **LTI integration**: the **Platform** and the **Tool**. The platform is usually associated with the Learning Management System \(LMS\), whereas the tool is usually associated to an external tool that enhances the platform to provide richer learning experiences. Within the context of LTI, **IllumiDesk is a Tool to enhance LMS's with Jupyter Notebooks**. There are two versions of the LTI standard:
 
@@ -28,7 +28,7 @@ As the version suggests, the LTI 1.3 standard is the latest version and includes
 The Learning Tools Interoperability® \(LTI®\) standards are maintained by the [IMS Global Learning Consortium](https://www.imsglobal.org/). IllumiDesk is an active **Learning Tools & Content Alliance Member** and has [certified the application](https://site.imsglobal.org/certifications/illumidesk-llc/illumidesk#cert_pane_nid_186771) with the latest versions of the LTI standard.
 {% endhint %}
 
-#### LTI Requests
+### LTI Requests
 
 LTI 1.1 defines `launch requests` as the action to initiate a session between the end-user' browser and the tool. LTI 1.3 requests are broader in scope, since it's also feasible to initiate the flow using services that aren't directly associated with the end-user's browser. With LTI 1.1, launch requests include arguments within the request's body as form data. LTI 1.3, on the other hand, defines mechanisms to encode the JSON payload as a `JWT`, thus converting top-level properties within the JSON document to `claims`.
 
@@ -58,7 +58,7 @@ Although LTI v1.3 uses `OAuth2` and `OIDC` as the underlying security standards 
 IMS Global recommends all platforms and tools to **migrate to LTI v1.3** as it provides more security and extensibility options.
 
 {% hint style="warning" %}
-### IllumiDesk Long Term Support \(LTS\) of LTI v1.1
+## IllumiDesk Long Term Support \(LTS\) of LTI v1.1
 
 IllumiDesk supports both the LTI v1.1 and LTI v1.3 standards. However, some newer features are only enabled with LTI v1.3. IllumiDesk's product team plans on a formal deprecation notice during December of 2020 with a 1 year window to allow customers to migrate their integrations from LTI v.1.1 to LTI v1.3 during the course of the 2021 calendar year.
 {% endhint %}

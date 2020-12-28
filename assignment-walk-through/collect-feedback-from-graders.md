@@ -1,6 +1,6 @@
 # Step 9: Collect Feedback from Graders
 
-### Collect and View Feedback as a Learner
+## Collect and View Feedback as a Learner
 
 Collecting feedback as a student is a simple process. First, log in with a user that has the `Learner` role. The learner can either click on the `Assignment` link or click on the `IllumiDesk` menu item in the course navigation bar to view their workspace.
 

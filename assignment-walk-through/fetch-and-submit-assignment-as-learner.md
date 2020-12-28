@@ -1,11 +1,11 @@
 # Step 6: Fetch and Submit Assignment as Learner
 
-### Fetch Assignment as Learner
+## Fetch Assignment as Learner
 
 Once the learner logs into their LMS, all they need to do to access the assignment file is click on the assignment link and then click on the `Fetch` button to obtain the assignment released by the instructor in the previous section.
 
 {% hint style="info" %}
-#### Why "Learner" instead of "Student"
+### Why "Learner" instead of "Student"
 
 Because we are all learners! No, but seriously, as you will see below the instructor could actually be a student in the course. For example, a teacher's assistant may very well be one of the students within the course but could also help the instructor\(s\) with the grading process. This is the main reason we opted for the shared grader model as it provides more flexibility moving forward.
 {% endhint %}
@@ -24,6 +24,5 @@ Then the learner just needs to click on the `Fetch` button to obtain the assignm
 
 ![Fetching the assignment transfers it from the Released assignments section to the Downloaded assignments section.](https://files.readme.io/e4c8d9f-Screen_Shot_2020-02-14_at_4.11.06_PM.png)
 
-The learner is now in the position to add their answers and submit the assignment for grading.  
-
+The learner is now in the position to add their answers and submit the assignment for grading.
 

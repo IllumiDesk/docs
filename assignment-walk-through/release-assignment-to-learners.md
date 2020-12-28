@@ -6,7 +6,7 @@ description: >-
 
 # Step 4: Release Assignments to Learners
 
-##  Generate and Release Assignments
+## Generate and Release Assignments
 
 With your assignment sources prepared your next task is to generate and release the assignment files to your students. To clarify:
 
@@ -36,7 +36,7 @@ Once successfully released, you will notice that the badge in the status column 
 The released assignment badge should appear after a successful release to your students.
 
 {% hint style="info" %}
-#### Jupyter Notebook Classic Interface
+### Jupyter Notebook Classic Interface
 
 If you are not familiar with the Jupyter Notebook Classic interface, refer to the [User interface components](https://jupyter-notebook.readthedocs.io/en/stable/ui_components.html) section of the Jupyter Notebooks documentation. Future releases of IllumiDesk will focus on the [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html) interface.
 {% endhint %}
