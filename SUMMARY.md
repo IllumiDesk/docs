@@ -38,3 +38,7 @@
 * [Enable a TLS Certificate for your Admin Console](illumidesk-enterprise-edition/ee-enable-a-tls-certificate-for-your-admin-console.md)
 * [Advanced Options](illumidesk-enterprise-edition/ee-advanced-options.md)
 
+## Grader
+
+* [How do hidden tests within an assignment work?](grader/how-do-hidden-tests-within-an-assignment-work.md)
+
