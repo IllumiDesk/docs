@@ -30,6 +30,10 @@
 * [Step 9: Collect Feedback from Graders](assignment-walk-through/collect-feedback-from-graders.md)
 * [Step 10: Send Assignment Grades to LMS](assignment-walk-through/sent-assignment-grades-to-lms.md)
 
+## Grader
+
+* [How do hidden tests within an assignment work?](grader/how-do-hidden-tests-within-an-assignment-work.md)
+
 ## IllumiDesk Enterprise Edition
 
 * [Introduction](illumidesk-enterprise-edition/ee-introduction.md)
@@ -37,8 +41,4 @@
 * [Initial Installation](illumidesk-enterprise-edition/ee-installation-admin-portal-and-stack.md)
 * [Enable a TLS Certificate for your Admin Console](illumidesk-enterprise-edition/ee-enable-a-tls-certificate-for-your-admin-console.md)
 * [Advanced Options](illumidesk-enterprise-edition/ee-advanced-options.md)
-
-## Grader
-
-* [How do hidden tests within an assignment work?](grader/how-do-hidden-tests-within-an-assignment-work.md)
 
