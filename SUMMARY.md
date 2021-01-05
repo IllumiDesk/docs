@@ -10,6 +10,7 @@
 ## Installation and Configuration
 
 * [Learning Tools Interoperability \(LTI\) v1.1](installation-and-configuration/canvas-lms-lti11/README.md)
+  * [IllumiDesk Open edX Integration with LTI 1.1](installation-and-configuration/canvas-lms-lti11/illumidesk-open-edx-integration-with-lti-1.1.md)
   * [Canvas with LTI v1.1](installation-and-configuration/canvas-lms-lti11/canvas-lms-lti-11.md)
   * [Moodle with LTI v1.1](installation-and-configuration/canvas-lms-lti11/moodle-lms-with-lti11.md)
   * [Open edX with LTI v1.1](installation-and-configuration/canvas-lms-lti11/open-edx-with-lti-v1.1.md)
