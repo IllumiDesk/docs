@@ -1,44 +1,60 @@
-# Mintlify Starter Kit
+# IllumiChat Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+This repository contains the official documentation for [IllumiChat](https://illumichat.com), the AI assistant builder platform.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## About IllumiChat
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+IllumiChat is a complete platform for creating intelligent AI assistants with your own knowledge base, seamless integrations, and powerful deployment options. Build assistants that can:
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- Answer questions using your custom knowledge base
+- Integrate with HubSpot, Jira, and other tools via MCP
+- Deploy as chat widgets, API integrations, or platform bots
+- Scale from simple Q&A to complex workflows
 
-## Development
+## Documentation Structure
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- **Getting Started**: Introduction, quick start guide, and core concepts
+- **User Guide**: Step-by-step instructions for using IllumiChat
+- **API Reference**: Complete API documentation for developers
+- **Integrations**: MCP setup guides and webhook configuration
+- **Troubleshooting**: Common issues and support resources
 
-```
-npm i -g mint
-```
+## Local Development
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+### Prerequisites
 
-```
-mint dev
-```
+- Node.js 18+ installed
+- Mintlify CLI installed: `npm i -g mint`
 
-View your local preview at `http://localhost:3000`.
+### Running Locally
 
-## Publishing changes
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Start the development server: `mint dev`
+4. Open [http://localhost:3000](http://localhost:3000)
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+### Making Changes
 
-## Need help?
+- Edit `.mdx` files in the appropriate directories
+- Update `docs.json` for navigation changes
+- Preview changes in real-time with the dev server
+- Commit and push to deploy automatically
 
-### Troubleshooting
+## Contributing
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+We welcome contributions to improve our documentation:
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
-- [Mintlify community](https://mintlify.com/community)
+1. Fork this repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## Support
+
+- **Documentation Issues**: [GitHub Issues](https://github.com/illumichat/docs/issues)
+- **Product Support**: [support@illumichat.com](mailto:support@illumichat.com)
+- **Community**: [Discord](https://discord.gg/illumichat)
+
+## License
+
+This documentation is licensed under the MIT License.

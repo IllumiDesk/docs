@@ -1,68 +1,146 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "IllumiChat Help",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#6366F1",
+    "light": "#8B5CF6",
+    "dark": "#4F46E5"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Core Concepts",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "concepts/ai-assistants",
+              "concepts/knowledge-bases",
+              "concepts/authentication"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "User Guide",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Account Management",
             "pages": [
-              "api-reference/introduction"
+              "user-guide/account-setup",
+              "user-guide/managing-profiles",
+              "user-guide/billing"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "AI Assistants",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "user-guide/creating-assistants",
+              "user-guide/configuring-assistants",
+              "user-guide/deploying-assistants",
+              "user-guide/managing-assistants"
+            ]
+          },
+          {
+            "group": "Knowledge Bases",
+            "pages": [
+              "user-guide/creating-knowledge-bases",
+              "user-guide/uploading-content",
+              "user-guide/organizing-content",
+              "user-guide/knowledge-base-settings"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "user-guide/mcp-hubspot",
+              "user-guide/mcp-jira",
+              "user-guide/other-integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api-reference/authentication"
+            ]
+          },
+          {
+            "group": "Assistants",
+            "pages": [
+              "api-reference/assistants/create",
+              "api-reference/assistants/list",
+              "api-reference/assistants/update",
+              "api-reference/assistants/delete"
+            ]
+          },
+          {
+            "group": "Knowledge Bases",
+            "pages": [
+              "api-reference/knowledge-bases/create",
+              "api-reference/knowledge-bases/upload",
+              "api-reference/knowledge-bases/query"
+            ]
+          },
+          {
+            "group": "Chat",
+            "pages": [
+              "api-reference/chat/send-message",
+              "api-reference/chat/stream-messages"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "MCP (Model Context Protocol)",
+            "pages": [
+              "integrations/mcp-overview",
+              "integrations/mcp-hubspot-setup",
+              "integrations/mcp-jira-setup"
+            ]
+          },
+          {
+            "group": "Webhooks",
+            "pages": [
+              "integrations/webhooks-setup",
+              "integrations/webhook-events"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Troubleshooting",
+        "groups": [
+          {
+            "group": "Common Issues",
+            "pages": [
+              "troubleshooting/authentication-issues",
+              "troubleshooting/assistant-issues",
+              "troubleshooting/knowledge-base-issues",
+              "troubleshooting/integration-issues"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "troubleshooting/contact-support",
+              "troubleshooting/faq"
             ]
           }
         ]
@@ -71,38 +149,38 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Dashboard",
+          "href": "https://app.illumichat.com",
+          "icon": "layout-dashboard"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://discord.gg/illumichat",
+          "icon": "message-circle"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Status",
+          "href": "https://status.illumichat.com",
+          "icon": "activity"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/68796da652d310c06cf6e9e1_new_blue_illumichat.png",
+    "dark": "/logo/68796da652d310c06cf6e9e1_new_blue_illumichat.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@illumichat.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get Started",
+      "href": "https://app.illumichat.com/signup"
     }
   },
   "contextual": {
@@ -119,9 +197,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/illumichat",
+      "github": "https://github.com/illumichat",
+      "linkedin": "https://linkedin.com/company/illumichat"
     }
   }
 }
