@@ -25,7 +25,8 @@
             "pages": [
               "concepts/ai-assistants",
               "concepts/knowledge-bases",
-              "concepts/authentication"
+              "concepts/authentication",
+              "concepts/data-retrieval-methods"
             ]
           }
         ]
@@ -48,6 +49,12 @@
               "user-guide/assistant-configuration",
               "user-guide/assistant-styling",
               "user-guide/assistant-sharing"
+            ]
+          },
+          {
+            "group": "Workspace",
+            "pages": [
+              "user-guide/workspace"
             ]
           },
           {
