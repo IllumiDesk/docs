@@ -1,0 +1,205 @@
+---
+title: "Assistant Styling"
+description: "Customize the appearance and messaging of your AI assistant"
+---
+
+## Assistant Styling
+
+Customize the appearance and messaging of your assistant through the Style tab to match your brand and create a better user experience.
+
+## Images & Icons
+
+### Profile Picture
+
+<ParamField body="profile_picture" type="file">
+Upload image (supports JPG, PNG with cropping, and SVG files up to 1MB)
+</ParamField>
+
+Avatar image that appears at the top of the chat and when responding.
+
+<Tip>
+Use a professional headshot or brand logo that represents your assistant's personality.
+</Tip>
+
+### Chat Icon
+
+<ParamField body="chat_icon" type="file">
+Upload image (supports JPG, PNG with cropping, and SVG files up to 1MB)
+</ParamField>
+
+Custom icon for the chat widget when closed (defaults to IllumiChat icon if not set).
+
+<Info>
+The chat icon appears on your website when the chat widget is minimized. Choose something recognizable and on-brand.
+</Info>
+
+## Content & Messaging
+
+### Display Name
+
+<ParamField body="display_name" type="string" default="Assistant">
+Name that appears at the top of the chat widget.
+</ParamField>
+
+<Example>
+Good display names: "Customer Support", "Sales Assistant", "Help Bot"
+</Example>
+
+### Initial Message
+
+<ParamField body="initial_message" type="string" default="Hello! How can I help you today?">
+Greeting message that appears when the chat opens (max 500 characters).
+</ParamField>
+
+<Tip>
+Make your initial message welcoming and specific to your assistant's purpose. Include what users can ask about.
+</Tip>
+
+### Suggested Messages
+
+<ParamField body="suggested_messages" type="array">
+Quick response options for users (max 5 messages).
+</ParamField>
+
+<Example>
+Suggested messages for a customer support assistant:
+- "I need help with my order"
+- "What are your return policies?"
+- "How do I reset my password?"
+- "Contact a human agent"
+</Example>
+
+### Auto Popup Delay (seconds)
+
+<ParamField body="auto_popup_delay" type="integer" default="-1">
+Auto show initial message popup after this many seconds. Use -1 to disable.
+</ParamField>
+
+<Info>
+Set to a positive number (e.g., 5) to automatically show the chat after users spend time on your page. Use -1 to keep it closed until users click.
+</Info>
+
+## Basic Styling
+
+### Brand Color
+
+<ParamField body="brand_color" type="color">
+Your branding color, will be used for chat bot bubble on your website.
+</ParamField>
+
+<Warning>
+Choose a color that contrasts well with your website background for visibility.
+</Warning>
+
+### Background Color
+
+<ParamField body="background_color" type="color">
+Background color of the chat widget.
+</ParamField>
+
+<Tip>
+Use a light, neutral color that doesn't interfere with readability.
+</Tip>
+
+### User Message Color
+
+<ParamField body="user_message_color" type="color">
+Background color for user message bubbles.
+</ParamField>
+
+<Info>
+This color should contrast well with the text color for readability.
+</Info>
+
+### Position
+
+<ParamField body="position" type="select" default="Bottom Right">
+Position of the chat widget on your website.
+</ParamField>
+
+Available positions:
+- Bottom Right
+- Bottom Left
+- Top Right
+- Top Left
+
+## Footer Settings
+
+### Show "Powered By IllumiChat"
+
+<ParamField body="show_powered_by" type="boolean" default="true">
+Display "Powered By IllumiChat" in the chat footer.
+</ParamField>
+
+<Info>
+This helps promote IllumiChat and may be required depending on your plan.
+</Info>
+
+### Custom Footer Message
+
+<ParamField body="custom_footer_message" type="string">
+Custom message to display in the chat footer (max 200 characters).
+</ParamField>
+
+<Example>
+Custom footer messages:
+- "Need immediate help? Call us at 1-800-HELP"
+- "Chat available 24/7 for your convenience"
+- "This conversation is recorded for quality assurance"
+</Example>
+
+## Best Practices
+
+### 1. Brand Consistency
+
+- Use your brand colors and fonts
+- Match your website's design language
+- Keep the styling professional and on-brand
+
+### 2. User Experience
+
+- Choose colors with good contrast for readability
+- Write clear, helpful initial messages
+- Provide relevant suggested messages to guide users
+
+### 3. Accessibility
+
+- Ensure text is readable against background colors
+- Use appropriate color contrast ratios
+- Consider users with visual impairments
+
+### 4. Mobile Optimization
+
+- Test your styling on mobile devices
+- Ensure the chat widget is easily accessible on small screens
+- Keep suggested messages concise for mobile users
+
+## Preview and Testing
+
+After configuring your styling:
+
+1. **Preview the chat widget** to see how it looks
+2. **Test on different devices** to ensure responsiveness
+3. **Check color contrast** for accessibility
+4. **Verify all images load** correctly
+5. **Test the user experience** from a visitor's perspective
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Share Your Assistant" icon="share" href="/user-guide/assistant-sharing">
+  Choose how to share your styled assistant with users.
+</Card>
+
+<Card title="Assistant Configuration" icon="settings" href="/user-guide/assistant-configuration">
+  Configure your assistant's core functionality.
+</Card>
+
+<Card title="Knowledge Base Setup" icon="database" href="/user-guide/creating-knowledge-bases">
+  Add knowledge to make your assistant more helpful.
+</Card>
+
+<Card title="Analytics & Insights" icon="chart-bar" href="/user-guide/analytics">
+  Track how users interact with your styled assistant.
+</Card>
+</CardGroup>

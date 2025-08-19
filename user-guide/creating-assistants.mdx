@@ -21,39 +21,53 @@ Before creating your assistant, make sure you have:
 2. Click **"Create Assistant"** from the main dashboard
 3. You'll be taken to the assistant creation wizard
 
-## Step 2: Basic Configuration
+![Assistant List Page](/images/assistant-screenshots/list-assistant-page.png)
 
-Fill in the essential details for your assistant:
+## Step 2: Configure Your Assistant
 
-### Assistant Information
+Your assistant has several configuration tabs to customize its behavior and appearance:
 
-<ParamField body="name" type="string" required>
-The name of your assistant. Choose something descriptive and memorable.
+### Configuration Tab
+
+#### Model Selection
+<ParamField body="model" type="string" required>
+Select the AI model for your assistant. Available models:
+- OpenAI GPT-4o
+- OpenAI GPT-4.1
+- OpenAI GPT-5
+- OpenAI GPT-o3
+- Google Gemini 2.0 Flash
 </ParamField>
 
-<ParamField body="description" type="string" required>
-A brief description of what your assistant does and who it helps.
+#### Strict Mode
+<ParamField body="strict_mode" type="boolean" default="false">
+When enabled, the assistant will only respond using information from the connected knowledge base.
 </ParamField>
 
-<ParamField body="category" type="string">
-Select the category that best describes your assistant's purpose (e.g., Customer Support, Sales, Internal Knowledge).
+<Info>
+In normal mode, you can configure Trigger Keywords on the connected knowledge base to automatically start a KB search when those words or phrases appear in user messages.
+</Info>
+
+#### Trigger Keywords
+<ParamField body="trigger_keywords" type="array">
+Add words or phrases that, in normal mode, will automatically trigger a knowledge base lookup.
 </ParamField>
 
-### Personality Settings
+<Warning>
+Connect a knowledge base to manage trigger keywords.
+</Warning>
 
-Configure how your assistant communicates:
-
-<ParamField body="tone" type="string" default="professional">
-Choose the communication tone: professional, friendly, casual, or formal.
+#### Instructions
+<ParamField body="instructions" type="text">
+Define your assistant's role, operating guidelines, and response style. You can use templates or write custom instructions (optional).
 </ParamField>
 
-<ParamField body="style" type="string" default="helpful">
-Define the response style: helpful, direct, detailed, or concise.
-</ParamField>
-
-<ParamField body="expertise_level" type="string" default="intermediate">
-Set the technical expertise level: beginner, intermediate, or advanced.
-</ParamField>
+<Example>
+**Standard AI Assistant Template**:
+- Role Definition: Responsive, intelligent AI assistant
+- Operating Guidelines: Respect boundaries, stay in scope, honor knowledge constraints
+- Positive Closures: End with supportive closing remarks
+</Example>
 
 <Example>
 **Professional Customer Support Assistant**:
@@ -64,76 +78,52 @@ Set the technical expertise level: beginner, intermediate, or advanced.
 - Expertise: Advanced
 </Example>
 
-## Step 3: Knowledge Base Setup
+![Create Assistant Form](/images/assistant-screenshots/create-assistant.png)
 
-Connect your assistant to relevant information:
+### Knowledge Base Tab
 
-### Upload Documents
+Manage the knowledge base connected to this assistant. Knowledge bases provide context and information that help your assistant give more accurate responses.
 
-1. Click **"Add Knowledge"** in the assistant builder
-2. Choose **"Upload Documents"**
-3. Select files from your computer or drag and drop
-4. Supported formats: PDF, Word (.docx), Text (.txt), Markdown (.md)
+#### Create Knowledge Base
+<ParamField body="create_kb" type="button">
+Create a knowledge base specifically for this assistant. It will be automatically connected and ready to use.
+</ParamField>
+
+<Info>
+Creating a knowledge base through this tab will:
+- Automatically connect it to this assistant
+- Make it immediately available for use
+- Allow you to manage it from the Configuration tab
+</Info>
+
+#### No Knowledge Base Connected
+If no knowledge base is connected, you'll see:
+- "No Knowledge Base Connected" message
+- "Create Knowledge Base" button
+
+### Tools Tab
+
+Tools allow the agent to get up to date information from the apps you work in.
+
+#### Available Integrations
+
+**Atlassian (Jira & Confluence)**
+- Access Jira issues and Confluence pages with official Atlassian MCP server
+- Connect button to enable integration
+
+**HubSpot**
+- CRM and marketing automation
+- Connect button to enable integration
 
 <Tip>
-Start with your most important documents first. You can always add more content later.
+Connect tools to give your assistant access to real-time data from your business applications.
 </Tip>
-
-### Add Web Content
-
-1. Click **"Add Knowledge"** → **"Web Content"**
-2. Enter the URL of the website you want to crawl
-3. Choose crawling depth (pages to include)
-4. Review and approve the content before adding
-
-<Warning>
-Only crawl websites you own or have permission to use. Respect robots.txt and rate limits.
-</Warning>
-
-### Create Custom Knowledge
-
-Add specific information manually:
-
-1. Click **"Add Knowledge"** → **"Custom Entry"**
-2. Choose the type: FAQ, Procedure, Definition, or Example
-3. Fill in the title and content
-4. Add relevant tags for better organization
-
-## Step 4: Advanced Configuration
-
-### Response Settings
-
-<ParamField body="max_response_length" type="integer" default="500">
-Maximum number of words in responses. Range: 100-2000.
-</ParamField>
-
-<ParamField body="include_sources" type="boolean" default="true">
-Whether to include source references in responses.
-</ParamField>
-
-<ParamField body="conversation_memory" type="integer" default="10">
-Number of previous messages to remember in conversations.
-</ParamField>
-
-### Behavior Rules
-
-Define what your assistant can and cannot do:
-
-<ParamField body="allowed_actions" type="array">
-List of actions your assistant is allowed to perform.
-</ParamField>
-
-<ParamField body="restricted_topics" type="array">
-Topics your assistant should avoid or redirect.
-</ParamField>
-
-<ParamField body="escalation_triggers" type="array">
-Conditions that should trigger escalation to human support.
-</ParamField>
 
 ## Step 5: Test Your Assistant
 
 Before deploying, thoroughly test your assistant:
+
+![Assistant Edit Page](/images/assistant-screenshots/assistant-edit-page.png)
 
 ### Test Scenarios
 
@@ -147,42 +137,126 @@ Before deploying, thoroughly test your assistant:
 Based on testing, you may need to:
 
 - Add more knowledge content
-- Adjust personality settings
-- Modify behavior rules
-- Update response settings
+- Adjust instructions and role definition
+- Modify strict mode settings
+- Update trigger keywords
 
 <Tip>
 Test with real users if possible. Their questions will often reveal gaps in your knowledge base.
 </Tip>
 
-## Step 6: Deploy Your Assistant
+### Style Tab
 
-Choose how to make your assistant available to users:
+Customize the appearance and messaging of your assistant:
 
-### Chat Widget
+#### Images & Icons
 
-Embed on your website:
+**Profile Picture**
+<ParamField body="profile_picture" type="file">
+Upload image (supports JPG, PNG with cropping, and SVG files up to 1MB)
+</ParamField>
+Avatar image that appears at the top of the chat and when responding.
 
-1. Go to **"Deploy"** → **"Chat Widget"**
-2. Customize appearance (colors, logo, position)
-3. Copy the embed code
-4. Add to your website
+**Chat Icon**
+<ParamField body="chat_icon" type="file">
+Upload image (supports JPG, PNG with cropping, and SVG files up to 1MB)
+</ParamField>
+Custom icon for the chat widget when closed (defaults to IllumiChat icon if not set).
 
-### API Integration
+#### Content & Messaging
 
-Use programmatically:
+**Display Name**
+<ParamField body="display_name" type="string" default="Assistant">
+Name that appears at the top of the chat widget.
+</ParamField>
 
-1. Go to **"Deploy"** → **"API"**
-2. Get your assistant's unique ID
-3. Use the API to send messages and receive responses
+**Initial Message**
+<ParamField body="initial_message" type="string" default="Hello! How can I help you today?">
+Greeting message that appears when the chat opens (max 500 characters).
+</ParamField>
 
-### Platform Integrations
+**Suggested Messages**
+<ParamField body="suggested_messages" type="array">
+Quick response options for users (max 5 messages).
+</ParamField>
 
-Deploy to communication platforms:
+**Auto Popup Delay (seconds)**
+<ParamField body="auto_popup_delay" type="integer" default="-1">
+Auto show initial message popup after this many seconds. Use -1 to disable.
+</ParamField>
 
-- **Slack**: Add to your workspace
-- **Discord**: Create a bot
-- **Microsoft Teams**: Integrate with your team
+#### Basic Styling
+
+**Brand Color**
+<ParamField body="brand_color" type="color">
+Your branding color, will be used for chat bot bubble on your website.
+</ParamField>
+
+**Background Color**
+<ParamField body="background_color" type="color">
+Background color of the chat widget.
+</ParamField>
+
+**User Message Color**
+<ParamField body="user_message_color" type="color">
+Background color for user message bubbles.
+</ParamField>
+
+**Position**
+<ParamField body="position" type="select" default="Bottom Right">
+Position of the chat widget on your website.
+</ParamField>
+
+#### Footer Settings
+
+**Show "Powered By IllumiChat"**
+<ParamField body="show_powered_by" type="boolean" default="true">
+Display "Powered By IllumiChat" in the chat footer.
+</ParamField>
+
+**Custom Footer Message**
+<ParamField body="custom_footer_message" type="string">
+Custom message to display in the chat footer (max 200 characters).
+</ParamField>
+
+### Share Tab
+
+Choose how you want to share your assistant:
+
+#### Private Sharing
+- Invite specific users to access your assistant
+- Invite by email
+- Control access permissions
+- User authentication required
+
+#### Public Sharing
+- Anyone with the link can access your assistant
+- Share via public link
+- Embed in websites
+- No login required
+
+#### Private Sharing Options
+Manage user access and permissions for your assistant:
+- **All Members Access**: Allow all campus members to access this assistant
+- **Assistant Access**: Manage who can access this assistant. Admins have access to all assistants by default.
+- **Invite Members**: Add users by email with admin permissions
+
+### Settings Tab
+
+Configure the identity and appearance of your AI Assistant.
+
+**Name**
+<ParamField body="name" type="string" required>
+The name of your assistant.
+</ParamField>
+
+**Description**
+<ParamField body="description" type="string">
+Enter a description (optional).
+</ParamField>
+
+**Danger Zone**
+- **Delete this assistant**: Once you delete an assistant, there is no going back. Please be certain.
 
 ## Best Practices
 
