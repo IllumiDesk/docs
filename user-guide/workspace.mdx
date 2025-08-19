@@ -1,0 +1,209 @@
+---
+title: "Workspace"
+description: "Use the workspace for a ChatGPT-like experience with your data and assistants"
+---
+
+## Workspace
+
+The workspace is your private environment for a ChatGPT/Claude desktop-like experience with your data. It provides a familiar chat interface where you can switch between assistants, upload files, connect to external tools, and control how deeply the AI thinks about your questions.
+
+![Workspace Interface](/images/workspace-screenshots/add-files-and-mcp.png)
+
+## Assistant Selector
+
+### Switching Assistants
+
+Use the assistant selector button to switch between different assistants:
+
+<ParamField body="assistant_selector" type="dropdown">
+Choose from your created assistants or the default "IllumiChat" assistant.
+</ParamField>
+
+<Tip>
+Make sure to switch from the default assistant to the one you want to use for your specific task.
+</Tip>
+
+### Setting Default Assistant
+
+You can change which assistant appears by default:
+
+1. Go to the assistant's page
+2. Click the star icon to make it your default assistant
+3. The starred assistant will appear first in the selector
+
+<Info>
+The default "IllumiChat" assistant is available for users who haven't created their own assistants yet and want to test the workspace functionality.
+</Info>
+
+## Adding Files and Connections
+
+### Plus Button
+
+The plus button allows you to enhance your workspace with additional data and tools:
+
+<ParamField body="plus_button" type="button">
+Click to add files or manage MCP connections.
+</ParamField>
+
+### File Upload
+
+Upload files directly to your workspace:
+
+- **Supported formats**: PDF, Word documents, text files, images
+- **File size limits**: Varies by plan
+- **Processing**: Files are automatically processed and made available to your assistant
+
+<Tip>
+Upload relevant documents to give your assistant context for better responses.
+</Tip>
+
+### MCP (Model Context Protocol) Connections
+
+Connect to third-party tools using MCP:
+
+#### Available Integrations
+
+**Jira**
+- Access project issues and workflows
+- Query ticket information
+- Update issue status
+
+**HubSpot**
+- Access CRM data and contacts
+- Retrieve marketing information
+- Manage customer relationships
+
+<Info>
+MCP connections provide real-time access to your business data, making your assistant more powerful and contextually aware.
+</Info>
+
+## Deep Research Mode
+
+### Understanding Deep Research
+
+The deep research button controls how thoroughly the AI thinks about your questions:
+
+<ParamField body="deep_research" type="toggle">
+Switch between normal and deep research modes.
+</ParamField>
+
+### When to Use Deep Research
+
+**Normal Mode:**
+- Quick responses
+- General questions
+- Simple tasks
+- Lower credit usage
+
+**Deep Research Mode:**
+- Complex analysis
+- Detailed explanations
+- Research-intensive questions
+- Higher credit usage
+
+<Warning>
+Deep research mode uses significantly more credits than normal mode. Use it only when you need more thorough analysis.
+</Warning>
+
+### Credit Usage
+
+- **Normal Mode**: Standard credit consumption
+- **Deep Research Mode**: 2-3x more credits per interaction
+
+<Tip>
+Monitor your credit usage in the account settings to ensure you don't exceed your plan limits.
+</Tip>
+
+## Workspace Features
+
+### Chat Interface
+
+The workspace provides a familiar chat experience:
+
+- **Message History**: All conversations are saved
+- **Context Awareness**: AI remembers previous messages in the session
+- **File References**: AI can reference uploaded files in responses
+- **Tool Integration**: AI can use connected MCP tools when relevant
+
+### Data Privacy
+
+Your workspace is private and secure:
+
+- **Private Environment**: Only you can access your workspace
+- **Data Encryption**: All files and conversations are encrypted
+- **No Training**: Your data is never used to train AI models
+- **Complete Control**: You can delete files and conversations at any time
+
+## Best Practices
+
+### 1. Choose the Right Assistant
+
+- Select an assistant that matches your current task
+- Use specialized assistants for domain-specific questions
+- Switch assistants as needed for different types of work
+
+### 2. Organize Your Files
+
+- Upload relevant documents before starting conversations
+- Keep files organized and well-named
+- Remove outdated files to maintain clean context
+
+### 3. Use MCP Connections Wisely
+
+- Connect only the tools you need
+- Ensure proper authentication for MCP connections
+- Monitor tool usage and performance
+
+### 4. Manage Credit Usage
+
+- Use normal mode for routine questions
+- Reserve deep research for complex analysis
+- Monitor your credit consumption regularly
+
+### 5. Leverage Context
+
+- Reference previous conversations when relevant
+- Upload supporting documents for complex questions
+- Use the AI's memory of the session effectively
+
+## Use Cases
+
+### Research and Analysis
+- Upload research papers and documents
+- Use deep research mode for thorough analysis
+- Connect to databases via MCP for real-time data
+
+### Content Creation
+- Upload source materials and style guides
+- Use specialized writing assistants
+- Leverage MCP connections for brand information
+
+### Problem Solving
+- Upload technical documentation
+- Connect to project management tools
+- Use deep research for complex troubleshooting
+
+### Learning and Education
+- Upload educational materials
+- Use different assistants for different subjects
+- Leverage deep research for comprehensive explanations
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Create Your First Assistant" icon="plus" href="/user-guide/creating-assistants">
+  Build a custom assistant for your specific needs.
+</Card>
+
+<Card title="Assistant Configuration" icon="settings" href="/user-guide/assistant-configuration">
+  Configure your assistants for optimal performance.
+</Card>
+
+<Card title="MCP Integrations" icon="plug" href="/integrations/mcp-overview">
+  Set up connections to external tools and data sources.
+</Card>
+
+<Card title="Knowledge Base Setup" icon="database" href="/user-guide/creating-knowledge-bases">
+  Create knowledge bases to enhance your assistants.
+</Card>
+</CardGroup>

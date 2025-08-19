@@ -1,0 +1,172 @@
+---
+title: "Data Retrieval Methods"
+description: "Understanding the differences between knowledge base retrieval and MCP tools"
+---
+
+## Data Retrieval Methods
+
+IllumiChat provides two different ways for your AI assistant to access information: **Knowledge Base Retrieval** and **MCP (Model Context Protocol) Tools**. Understanding the differences between these methods is crucial for choosing the right approach for your use case.
+
+## Knowledge Base Retrieval
+
+### How It Works
+
+Knowledge base retrieval allows your assistant to access information you've uploaded and organized:
+
+- **Uploaded Content**: Documents, text files, web content you've crawled
+- **Stored Information**: All content is processed and stored in your knowledge base
+- **Context Search**: Assistant searches through your knowledge base to find relevant information
+- **Response Generation**: Uses found information to generate helpful responses
+
+### Access and Privacy
+
+<Warning>
+**Important**: Knowledge base content is accessible to anyone who has access to your assistant or chat embed.
+</Warning>
+
+#### Public Accessibility
+
+- **Chat Widget**: Anyone using your embedded chat can access knowledge base content
+- **Public Sharing**: If you share your assistant publicly, all users can access the knowledge base
+- **Team Access**: If you share with team members, they can access all knowledge base content
+
+#### Use Cases
+
+Knowledge bases are ideal for:
+
+- **Public Information**: Product documentation, FAQs, help articles
+- **Team Knowledge**: Company policies, procedures, shared resources
+- **Customer Support**: Information you want customers to access
+- **Public Assistants**: Content you're comfortable sharing with everyone
+
+<Example>
+**Customer Support Assistant**: Upload product manuals, FAQs, and troubleshooting guides. Customers can ask questions and get answers based on this public information.
+</Example>
+
+## MCP (Model Context Protocol) Tools
+
+### How It Works
+
+MCP tools provide real-time access to external systems and data sources:
+
+- **Live Connections**: Direct connection to your Jira, HubSpot, or other systems
+- **Real-Time Data**: Access current, up-to-date information from your tools
+- **User-Specific**: Connections are tied to your account and credentials
+- **Dynamic Queries**: Assistant can query your systems in real-time
+
+### Access and Privacy
+
+<Info>
+**Secure**: MCP tools are assistant and user-specific. Only you can access your connected accounts.
+</Info>
+
+#### Private Access
+
+- **Personal Use**: MCP connections are for your personal workspace use
+- **Account-Specific**: Your HubSpot/Jira credentials are not shared with others
+- **Workspace Only**: Primarily used in the private workspace environment
+- **No Public Access**: Other users cannot access your MCP-connected data
+
+#### Use Cases
+
+MCP tools are ideal for:
+
+- **Personal Analysis**: Querying your own data for insights
+- **Document Creation**: Using your data to generate reports and documents
+- **Research**: Analyzing information from your business systems
+- **Private Workspace**: Personal ChatGPT-like experience with your data
+
+<Example>
+**Personal Workspace**: Connect your HubSpot account to analyze customer data, create reports, or answer questions about your business metrics without sharing access with others.
+</Example>
+
+## Key Differences
+
+| Aspect | Knowledge Base | MCP Tools |
+|--------|----------------|-----------|
+| **Data Source** | Uploaded/stored content | Live external systems |
+| **Access Control** | Public to assistant users | Private to you only |
+| **Data Freshness** | Static (until updated) | Real-time |
+| **Use Case** | Public information sharing | Private data analysis |
+| **Setup** | Upload and organize content | Connect external accounts |
+| **Sharing** | Available to all assistant users | Personal workspace only |
+
+## Choosing the Right Method
+
+### Use Knowledge Base When:
+
+✅ You want to share information publicly  
+✅ Content is meant for customer/team access  
+✅ Information is relatively static  
+✅ You're comfortable with public accessibility  
+✅ Building customer-facing assistants  
+
+### Use MCP Tools When:
+
+✅ You need real-time data from your systems  
+✅ Information is private and personal  
+✅ You want to analyze your own business data  
+✅ Working in your private workspace  
+✅ Creating personal documents and reports  
+
+## Security Considerations
+
+### Knowledge Base Security
+
+- **Content Review**: Only upload content you're comfortable sharing publicly
+- **Access Control**: Be mindful of who has access to your assistant
+- **Regular Updates**: Keep content current and accurate
+- **Sensitive Information**: Never upload confidential or private data
+
+### MCP Security
+
+- **Credential Protection**: Your account credentials remain secure
+- **Private Access**: Only you can access your connected systems
+- **Workspace Only**: MCP tools are primarily for personal workspace use
+- **Account Management**: You control which systems to connect
+
+## Best Practices
+
+### 1. Plan Your Data Strategy
+
+- Identify what information should be public vs. private
+- Determine which data needs real-time access
+- Consider your audience and their needs
+
+### 2. Organize Knowledge Base Content
+
+- Structure content logically for easy retrieval
+- Use clear, descriptive titles and tags
+- Regular maintenance and updates
+
+### 3. Use MCP Tools Strategically
+
+- Connect only the systems you need
+- Use for personal analysis and document creation
+- Keep credentials secure and up-to-date
+
+### 4. Monitor and Maintain
+
+- Regularly review knowledge base content
+- Update outdated information
+- Monitor MCP connection performance
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Create Knowledge Base" icon="database" href="/user-guide/creating-knowledge-bases">
+  Learn how to set up and organize your knowledge base.
+</Card>
+
+<Card title="MCP Integrations" icon="plug" href="/integrations/mcp-overview">
+  Set up MCP connections to your business tools.
+</Card>
+
+<Card title="Workspace" icon="layout" href="/user-guide/workspace">
+  Use the workspace for private data analysis with MCP tools.
+</Card>
+
+<Card title="Assistant Configuration" icon="settings" href="/user-guide/assistant-configuration">
+  Configure your assistant's data access methods.
+</Card>
+</CardGroup>
