@@ -1,0 +1,255 @@
+---
+title: "MCP (Model Context Protocol) Overview"
+description: "Learn how to connect your AI assistants to external tools and data sources using MCP"
+---
+
+## What is MCP?
+
+Model Context Protocol (MCP) is an open standard that enables AI assistants to securely connect to external tools, data sources, and services. In IllumiChat, MCP integrations allow your AI assistants to access real-time information from your existing systems and workflows.
+
+## How MCP Works
+
+<Steps>
+<Step title="Assistant receives user query">
+  A user asks a question that requires external data or action.
+</Step>
+
+<Step title="Assistant identifies need for MCP">
+  The assistant determines that it needs to access external information or perform an action.
+</Step>
+
+<Step title="MCP connection established">
+  The assistant securely connects to the configured MCP server.
+</Step>
+
+<Step title="Data retrieved or action performed">
+  The MCP server fetches the required data or executes the requested action.
+</Step>
+
+<Step title="Response generated">
+  The assistant incorporates the external data into its response to the user.
+</Step>
+</Steps>
+
+## Benefits of MCP Integrations
+
+### Real-Time Data Access
+
+- **Live Information**: Access current data from your systems
+- **Dynamic Responses**: Provide up-to-date information to users
+- **Contextual Answers**: Give responses based on actual system state
+
+### Enhanced Capabilities
+
+- **Action Execution**: Perform tasks in external systems
+- **Data Retrieval**: Fetch specific information on demand
+- **Workflow Integration**: Connect to existing business processes
+
+### Security and Control
+
+- **Secure Connections**: Encrypted communication between systems
+- **Access Control**: Granular permissions for different operations
+- **Audit Trails**: Track all MCP interactions and data access
+
+## Supported MCP Integrations
+
+### HubSpot Integration
+
+Connect your assistant to HubSpot CRM and marketing data:
+
+<Card title="HubSpot MCP" icon="database">
+  - Access contact and company information
+  - Retrieve deal and pipeline data
+  - Create and update records
+  - Send emails and track engagement
+</Card>
+
+### Jira Integration
+
+Integrate with Jira project management:
+
+<Card title="Jira MCP" icon="ticket">
+  - Retrieve issue and project information
+  - Create and update tickets
+  - Track project progress
+  - Manage workflows and transitions
+</Card>
+
+### Custom MCP Servers
+
+Build your own MCP integrations:
+
+<Card title="Custom MCP" icon="code">
+  - Connect to internal systems
+  - Access proprietary data sources
+  - Integrate with custom APIs
+  - Build specialized workflows
+</Card>
+
+## Setting Up MCP Integrations
+
+### Prerequisites
+
+Before setting up MCP integrations, ensure you have:
+
+- An active IllumiChat account
+- Access to the external system you want to integrate
+- Appropriate permissions and API credentials
+- Understanding of the data you want to access
+
+### Configuration Process
+
+<Steps>
+<Step title="Choose Integration">
+  Select the MCP integration you want to configure from the integrations menu.
+</Step>
+
+<Step title="Provide Credentials">
+  Enter the necessary authentication credentials and connection details.
+</Step>
+
+<Step title="Configure Permissions">
+  Set up what data and actions your assistant can access.
+</Step>
+
+<Step title="Test Connection">
+  Verify that the integration is working correctly with test queries.
+</Step>
+
+<Step title="Deploy to Assistant">
+  Add the MCP integration to your assistant's configuration.
+</Step>
+</Steps>
+
+## Security Considerations
+
+### Authentication
+
+- **API Keys**: Secure storage and rotation of credentials
+- **OAuth Flows**: Use OAuth 2.0 for enhanced security
+- **Token Management**: Automatic token refresh and validation
+
+### Data Privacy
+
+- **Selective Access**: Only request necessary data
+- **Data Minimization**: Limit data retention and usage
+- **User Consent**: Respect user privacy preferences
+
+### Access Control
+
+- **Role-Based Permissions**: Different access levels for different users
+- **Audit Logging**: Track all data access and modifications
+- **Rate Limiting**: Prevent abuse and ensure system stability
+
+## Best Practices
+
+### 1. Start Small
+
+<Info>
+Begin with simple data retrieval before adding complex actions and workflows.
+</Info>
+
+### 2. Test Thoroughly
+
+- Test with various user scenarios
+- Verify data accuracy and timeliness
+- Check error handling and fallbacks
+- Monitor performance impact
+
+### 3. Document Integration
+
+- Document what data is accessed
+- Explain how the integration works
+- Provide troubleshooting guidance
+- Keep documentation updated
+
+### 4. Monitor Usage
+
+- Track integration performance
+- Monitor error rates and response times
+- Analyze usage patterns
+- Optimize based on insights
+
+## Common Use Cases
+
+### Customer Support
+
+- Access customer information from CRM
+- Retrieve order and purchase history
+- Create support tickets automatically
+- Update customer records
+
+### Sales Enablement
+
+- Get real-time deal information
+- Access product catalogs and pricing
+- Create leads and opportunities
+- Track sales activities
+
+### Project Management
+
+- Retrieve project status and progress
+- Create and update tasks
+- Access team information
+- Track time and resources
+
+### Data Analysis
+
+- Access business intelligence data
+- Generate reports on demand
+- Provide real-time analytics
+- Answer data-driven questions
+
+## Troubleshooting
+
+### Common Issues
+
+<AccordionGroup>
+<Accordion title="Authentication Failures">
+  - Verify API credentials are correct and active
+  - Check token expiration and refresh settings
+  - Ensure proper permissions are granted
+  - Test connection outside of IllumiChat
+</Accordion>
+
+<Accordion title="Data Not Found">
+  - Verify the data exists in the external system
+  - Check query parameters and filters
+  - Ensure proper access permissions
+  - Review data format and structure
+</Accordion>
+
+<Accordion title="Performance Issues">
+  - Monitor response times and timeouts
+  - Check rate limiting and quotas
+  - Optimize query patterns
+  - Consider caching strategies
+</Accordion>
+
+<Accordion title="Permission Errors">
+  - Review user roles and permissions
+  - Check API scope and access levels
+  - Verify integration configuration
+  - Contact system administrator if needed
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="HubSpot Setup" icon="database" href="/integrations/mcp-hubspot-setup">
+  Detailed guide to setting up HubSpot MCP integration.
+</Card>
+
+<Card title="Jira Setup" icon="ticket" href="/integrations/mcp-jira-setup">
+  Step-by-step instructions for Jira MCP integration.
+</Card>
+
+<Card title="Custom MCP" icon="code" href="/integrations/custom-mcp">
+  Learn how to build your own MCP server and integration.
+</Card>
+
+<Card title="API Reference" icon="book" href="/api-reference/mcp">
+  Technical documentation for MCP API endpoints and methods.
+</Card>
+</CardGroup>

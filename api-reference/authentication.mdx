@@ -1,0 +1,260 @@
+---
+title: "Authentication"
+description: "Learn how to authenticate with the IllumiChat API"
+---
+
+## API Authentication
+
+All IllumiChat API requests require authentication using API keys. This guide explains how to obtain and use API keys to access the IllumiChat API.
+
+## Getting Your API Key
+
+### Step 1: Access API Settings
+
+1. Log in to your [IllumiChat dashboard](https://app.illumichat.com)
+2. Navigate to **Settings** → **API Keys**
+3. Click **"Create New API Key"**
+
+### Step 2: Configure API Key
+
+<ParamField body="name" type="string" required>
+A descriptive name for your API key (e.g., "Production App", "Development Testing").
+</ParamField>
+
+<ParamField body="permissions" type="array" required>
+Select the permissions this API key should have:
+- `assistants:read` - Read assistant information
+- `assistants:write` - Create and update assistants
+- `knowledge:read` - Read knowledge base content
+- `knowledge:write` - Upload and manage knowledge content
+- `chat:send` - Send messages to assistants
+- `analytics:read` - Access analytics and usage data
+</ParamField>
+
+<ParamField body="expires_at" type="string">
+Optional expiration date in ISO 8601 format (e.g., "2024-12-31T23:59:59Z").
+</ParamField>
+
+### Step 3: Generate and Store
+
+1. Click **"Generate API Key"**
+2. Copy the generated key immediately (it won't be shown again)
+3. Store it securely in your application
+
+<Warning>
+API keys are sensitive credentials. Never expose them in client-side code, public repositories, or logs.
+</Warning>
+
+## Using Your API Key
+
+### HTTP Headers
+
+Include your API key in the `Authorization` header of all API requests:
+
+<RequestExample>
+```bash cURL
+curl -X GET 'https://api.illumichat.com/v1/assistants' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
+```
+</RequestExample>
+
+### Response Format
+
+Successful authentication returns the requested data:
+
+<ResponseExample>
+```json Success
+{
+  "data": [
+    {
+      "id": "asst_123456789",
+      "name": "Customer Support Assistant",
+      "description": "Helps customers with product questions",
+      "status": "active",
+      "created_at": "2024-01-15T10:30:00Z"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "limit": 10,
+    "total": 1
+  }
+}
+```
+</ResponseExample>
+
+## Authentication Errors
+
+### Invalid API Key
+
+<ResponseExample>
+```json Error
+{
+  "error": {
+    "code": "authentication_failed",
+    "message": "Invalid API key provided",
+    "details": "The API key is either invalid, expired, or doesn't have the required permissions"
+  }
+}
+```
+</ResponseExample>
+
+### Missing API Key
+
+<ResponseExample>
+```json Error
+{
+  "error": {
+    "code": "authentication_required",
+    "message": "API key is required",
+    "details": "Please include your API key in the Authorization header"
+  }
+}
+```
+</ResponseExample>
+
+### Insufficient Permissions
+
+<ResponseExample>
+```json Error
+{
+  "error": {
+    "code": "insufficient_permissions",
+    "message": "API key doesn't have required permissions",
+    "details": "This operation requires 'assistants:write' permission"
+  }
+}
+```
+</ResponseExample>
+
+## Security Best Practices
+
+### 1. Secure Storage
+
+- Store API keys in environment variables
+- Use secure secret management services
+- Never commit keys to version control
+- Rotate keys regularly
+
+### 2. Key Management
+
+- Use different keys for different environments
+- Set appropriate expiration dates
+- Monitor key usage and activity
+- Revoke compromised keys immediately
+
+### 3. Application Security
+
+- Validate all input data
+- Implement proper error handling
+- Use HTTPS for all API calls
+- Monitor for suspicious activity
+
+## Rate Limiting
+
+API requests are subject to rate limiting based on your plan:
+
+<ResponseExample>
+```json Rate Limited
+{
+  "error": {
+    "code": "rate_limit_exceeded",
+    "message": "Rate limit exceeded",
+    "details": "Too many requests. Please try again in 60 seconds.",
+    "retry_after": 60
+  }
+}
+```
+</ResponseExample>
+
+### Rate Limit Headers
+
+Response headers include rate limit information:
+
+```bash
+X-RateLimit-Limit: 1000
+X-RateLimit-Remaining: 999
+X-RateLimit-Reset: 1642233600
+```
+
+## SDK Authentication
+
+### JavaScript/Node.js
+
+```javascript
+import { IllumiChat } from '@illumichat/sdk';
+
+const client = new IllumiChat({
+  apiKey: process.env.ILLUMICHAT_API_KEY
+});
+
+// Make API calls
+const assistants = await client.assistants.list();
+```
+
+### Python
+
+```python
+import illumichat
+
+client = illumichat.Client(api_key=os.environ['ILLUMICHAT_API_KEY'])
+
+# Make API calls
+assistants = client.assistants.list()
+```
+
+### cURL
+
+```bash
+curl -X GET 'https://api.illumichat.com/v1/assistants' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
+```
+
+## Troubleshooting
+
+### Common Issues
+
+<AccordionGroup>
+<Accordion title="API Key Not Working">
+  - Verify the key is correct and active
+  - Check if the key has expired
+  - Ensure proper permissions are granted
+  - Try regenerating the key
+</Accordion>
+
+<Accordion title="Permission Denied">
+  - Review the API key permissions
+  - Check if the operation requires additional scopes
+  - Verify your account plan includes the feature
+  - Contact support if needed
+</Accordion>
+
+<Accordion title="Rate Limiting">
+  - Check your current usage against plan limits
+  - Implement exponential backoff in your code
+  - Consider upgrading your plan
+  - Monitor rate limit headers
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="API Reference" icon="book" href="/api-reference/assistants/create">
+  Explore the complete API documentation and endpoints.
+</Card>
+
+<Card title="SDK Documentation" icon="code" href="/api-reference/sdk">
+  Learn how to use our official SDKs for easier integration.
+</Card>
+
+<Card title="Webhooks" icon="webhook" href="/integrations/webhooks-setup">
+  Set up webhooks to receive real-time notifications.
+</Card>
+
+<Card title="Rate Limits" icon="clock" href="/api-reference/rate-limits">
+  Understand rate limiting and best practices.
+</Card>
+</CardGroup>

@@ -1,0 +1,256 @@
+---
+title: "Creating AI Assistants"
+description: "Step-by-step guide to creating your first AI assistant"
+---
+
+## Create Your First AI Assistant
+
+Follow this guide to build a powerful AI assistant that can help your users with their questions and tasks.
+
+## Prerequisites
+
+Before creating your assistant, make sure you have:
+
+- An active IllumiChat account
+- Content ready for your knowledge base (optional but recommended)
+- A clear understanding of your assistant's purpose
+
+## Step 1: Access the Assistant Builder
+
+1. Log in to your [IllumiChat dashboard](https://app.illumichat.com)
+2. Click **"Create Assistant"** from the main dashboard
+3. You'll be taken to the assistant creation wizard
+
+## Step 2: Basic Configuration
+
+Fill in the essential details for your assistant:
+
+### Assistant Information
+
+<ParamField body="name" type="string" required>
+The name of your assistant. Choose something descriptive and memorable.
+</ParamField>
+
+<ParamField body="description" type="string" required>
+A brief description of what your assistant does and who it helps.
+</ParamField>
+
+<ParamField body="category" type="string">
+Select the category that best describes your assistant's purpose (e.g., Customer Support, Sales, Internal Knowledge).
+</ParamField>
+
+### Personality Settings
+
+Configure how your assistant communicates:
+
+<ParamField body="tone" type="string" default="professional">
+Choose the communication tone: professional, friendly, casual, or formal.
+</ParamField>
+
+<ParamField body="style" type="string" default="helpful">
+Define the response style: helpful, direct, detailed, or concise.
+</ParamField>
+
+<ParamField body="expertise_level" type="string" default="intermediate">
+Set the technical expertise level: beginner, intermediate, or advanced.
+</ParamField>
+
+<Example>
+**Professional Customer Support Assistant**:
+- Name: "TechSupport Pro"
+- Description: "Expert technical support assistant for software troubleshooting"
+- Tone: Professional
+- Style: Helpful
+- Expertise: Advanced
+</Example>
+
+## Step 3: Knowledge Base Setup
+
+Connect your assistant to relevant information:
+
+### Upload Documents
+
+1. Click **"Add Knowledge"** in the assistant builder
+2. Choose **"Upload Documents"**
+3. Select files from your computer or drag and drop
+4. Supported formats: PDF, Word (.docx), Text (.txt), Markdown (.md)
+
+<Tip>
+Start with your most important documents first. You can always add more content later.
+</Tip>
+
+### Add Web Content
+
+1. Click **"Add Knowledge"** → **"Web Content"**
+2. Enter the URL of the website you want to crawl
+3. Choose crawling depth (pages to include)
+4. Review and approve the content before adding
+
+<Warning>
+Only crawl websites you own or have permission to use. Respect robots.txt and rate limits.
+</Warning>
+
+### Create Custom Knowledge
+
+Add specific information manually:
+
+1. Click **"Add Knowledge"** → **"Custom Entry"**
+2. Choose the type: FAQ, Procedure, Definition, or Example
+3. Fill in the title and content
+4. Add relevant tags for better organization
+
+## Step 4: Advanced Configuration
+
+### Response Settings
+
+<ParamField body="max_response_length" type="integer" default="500">
+Maximum number of words in responses. Range: 100-2000.
+</ParamField>
+
+<ParamField body="include_sources" type="boolean" default="true">
+Whether to include source references in responses.
+</ParamField>
+
+<ParamField body="conversation_memory" type="integer" default="10">
+Number of previous messages to remember in conversations.
+</ParamField>
+
+### Behavior Rules
+
+Define what your assistant can and cannot do:
+
+<ParamField body="allowed_actions" type="array">
+List of actions your assistant is allowed to perform.
+</ParamField>
+
+<ParamField body="restricted_topics" type="array">
+Topics your assistant should avoid or redirect.
+</ParamField>
+
+<ParamField body="escalation_triggers" type="array">
+Conditions that should trigger escalation to human support.
+</ParamField>
+
+## Step 5: Test Your Assistant
+
+Before deploying, thoroughly test your assistant:
+
+### Test Scenarios
+
+1. **Basic Questions**: Test common queries about your content
+2. **Edge Cases**: Try unusual or complex questions
+3. **Boundary Testing**: Test what your assistant won't do
+4. **Conversation Flow**: Test multi-turn conversations
+
+### Refine Responses
+
+Based on testing, you may need to:
+
+- Add more knowledge content
+- Adjust personality settings
+- Modify behavior rules
+- Update response settings
+
+<Tip>
+Test with real users if possible. Their questions will often reveal gaps in your knowledge base.
+</Tip>
+
+## Step 6: Deploy Your Assistant
+
+Choose how to make your assistant available to users:
+
+### Chat Widget
+
+Embed on your website:
+
+1. Go to **"Deploy"** → **"Chat Widget"**
+2. Customize appearance (colors, logo, position)
+3. Copy the embed code
+4. Add to your website
+
+### API Integration
+
+Use programmatically:
+
+1. Go to **"Deploy"** → **"API"**
+2. Get your assistant's unique ID
+3. Use the API to send messages and receive responses
+
+### Platform Integrations
+
+Deploy to communication platforms:
+
+- **Slack**: Add to your workspace
+- **Discord**: Create a bot
+- **Microsoft Teams**: Integrate with your team
+
+## Best Practices
+
+### 1. Start Simple
+
+<Info>
+Begin with a focused assistant that does one thing well, then expand over time.
+</Info>
+
+### 2. Quality Knowledge
+
+- Upload accurate, up-to-date information
+- Organize content logically
+- Include examples and use cases
+- Regular content updates
+
+### 3. Clear Boundaries
+
+- Define what your assistant can and cannot do
+- Set appropriate escalation paths
+- Include disclaimers when necessary
+- Respect privacy and security
+
+### 4. Continuous Improvement
+
+- Monitor usage and feedback
+- Identify common questions and gaps
+- Update knowledge base regularly
+- Refine personality and behavior
+
+## Common Issues and Solutions
+
+<AccordionGroup>
+<Accordion title="Assistant gives generic responses">
+  - Check that your knowledge base has relevant content
+  - Review and improve content quality
+  - Adjust response settings for more specificity
+</Accordion>
+
+<Accordion title="Assistant doesn't understand questions">
+  - Add more diverse examples to your knowledge base
+  - Include common question variations
+  - Test with different phrasings
+</Accordion>
+
+<Accordion title="Responses are too long/short">
+  - Adjust the max_response_length setting
+  - Modify the response style (detailed vs concise)
+  - Review and edit knowledge content
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Configure Advanced Settings" icon="settings" href="/user-guide/configuring-assistants">
+  Learn about advanced configuration options and fine-tuning.
+</Card>
+
+<Card title="Deploy Your Assistant" icon="globe" href="/user-guide/deploying-assistants">
+  Detailed guide to deploying your assistant to different platforms.
+</Card>
+
+<Card title="Add MCP Integrations" icon="plug" href="/integrations/mcp-overview">
+  Connect your assistant to external tools and data sources.
+</Card>
+
+<Card title="Monitor Performance" icon="chart-bar" href="/user-guide/analytics">
+  Track how your assistant is performing and identify improvements.
+</Card>
+</CardGroup>
