@@ -1,0 +1,190 @@
+---
+title: "Assistant Sharing"
+description: "Share your AI assistant with users through private or public access"
+---
+
+## Assistant Sharing
+
+Choose how you want to share your assistant with users through the Share tab. You can control access permissions and sharing methods to suit your needs.
+
+## Share Assistant
+
+### Private Sharing
+
+Invite specific users to access your assistant:
+
+<ParamField body="private_sharing" type="section">
+- Invite by email
+- Control access permissions
+- User authentication required
+</ParamField>
+
+<Info>
+Private sharing is ideal for internal teams, beta testers, or when you need to control who can access your assistant.
+</Info>
+
+### Public Sharing
+
+Anyone with the link can access your assistant:
+
+<ParamField body="public_sharing" type="section">
+- Share via public link
+- Embed in websites
+- No login required
+</ParamField>
+
+<Warning>
+Public sharing allows anyone with the link to use your assistant. Make sure your assistant is ready for public use.
+</Warning>
+
+## Private Sharing Options
+
+Manage user access and permissions for your assistant:
+
+### All Members Access
+
+<ParamField body="all_members_access" type="boolean" default="false">
+Allow all campus members to access this assistant.
+</ParamField>
+
+<Tip>
+Enable this option if you want everyone in your organization to have access to the assistant.
+</Tip>
+
+### Assistant Access
+
+Manage who can access this assistant. Admins have access to all assistants by default.
+
+#### Invite Members
+
+<ParamField body="invite_members" type="email">
+Invite users by email to get started.
+</ParamField>
+
+<Example>
+Invite format: user@example.com
+</Example>
+
+#### Member Management
+
+View and manage current members:
+
+- **Admin**: Full access to manage the assistant
+- **User**: Can use the assistant but cannot modify settings
+
+<Info>
+You can see a list of current members with their roles and remove access as needed.
+</Info>
+
+#### Pending Invitations
+
+Track invitations that haven't been accepted yet:
+
+- View pending email invitations
+- Resend invitations if needed
+- Cancel pending invitations
+
+## Public Sharing Features
+
+### Public Link
+
+Generate a shareable link for your assistant:
+
+<ParamField body="public_link" type="url">
+Copy this link to share your assistant publicly.
+</ParamField>
+
+<Tip>
+The public link can be shared on social media, websites, or anywhere you want to make your assistant available.
+</Tip>
+
+### Embed Options
+
+Embed your assistant directly into websites:
+
+<ParamField body="embed_code" type="code">
+Copy this HTML code to embed the assistant on your website.
+</ParamField>
+
+<Example>
+```html
+<script src="https://app.illumichat.com/widget.js" data-assistant-id="your-assistant-id"></script>
+```
+</Example>
+
+## Access Control
+
+### Authentication Requirements
+
+**Private Sharing:**
+- Users must sign in with their email
+- Access is controlled by your invitation list
+- You can revoke access at any time
+
+**Public Sharing:**
+- No authentication required
+- Anyone with the link can use the assistant
+- Consider rate limiting for abuse prevention
+
+### Security Considerations
+
+<Warning>
+When using public sharing:
+- Monitor usage for abuse
+- Set appropriate rate limits
+- Consider content filtering
+- Be aware of potential misuse
+</Warning>
+
+## Best Practices
+
+### 1. Choose the Right Sharing Method
+
+- **Private Sharing**: For internal teams, beta testing, or controlled access
+- **Public Sharing**: For customer-facing assistants or public demos
+
+### 2. Manage Permissions Carefully
+
+- Only give admin access to trusted team members
+- Regularly review who has access to your assistants
+- Remove access for users who no longer need it
+
+### 3. Monitor Usage
+
+- Track how your assistant is being used
+- Monitor for unusual activity or abuse
+- Adjust sharing settings based on usage patterns
+
+### 4. Test Before Sharing
+
+- Test your assistant thoroughly before making it public
+- Ensure it handles edge cases appropriately
+- Verify that responses are appropriate for your audience
+
+## Analytics and Insights
+
+Track how your shared assistant is performing:
+
+- **Usage Statistics**: See how often your assistant is used
+- **User Feedback**: Monitor user satisfaction and complaints
+- **Performance Metrics**: Track response times and success rates
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Assistant Styling" icon="palette" href="/user-guide/assistant-styling">
+  Customize the appearance of your shared assistant.
+</Card>
+
+<Card title="Assistant Configuration" icon="settings" href="/user-guide/assistant-configuration">
+  Configure your assistant's functionality before sharing.
+</Card>
+
+<Card title="Analytics & Insights" icon="chart-bar" href="/user-guide/analytics">
+  Track how users interact with your shared assistant.
+</Card>
+
+<Card title="Knowledge Base Setup" icon="database" href="/user-guide/creating-knowledge-bases">
+  Add knowledge to make your shared assistant more helpful.
+</Card>
+</CardGroup>

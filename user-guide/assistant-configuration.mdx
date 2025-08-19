@@ -1,0 +1,155 @@
+---
+title: "Assistant Configuration"
+description: "Configure your AI assistant's model, knowledge base, and tools"
+---
+
+## Assistant Configuration
+
+Configure your AI assistant's core functionality through the Configuration, Knowledge Base, and Tools tabs.
+
+## Configuration Tab
+
+### Model Selection
+
+Choose the AI model that powers your assistant:
+
+<ParamField body="model" type="string" required>
+Select the AI model for your assistant. Available models:
+- OpenAI GPT-4o
+- OpenAI GPT-4.1
+- OpenAI GPT-5
+- OpenAI GPT-o3
+- Google Gemini 2.0 Flash
+</ParamField>
+
+<Tip>
+Different models have different strengths. GPT-4o is great for general use, while GPT-5 excels at complex reasoning tasks.
+</Tip>
+
+### Strict Mode
+
+Control how your assistant uses knowledge base information:
+
+<ParamField body="strict_mode" type="boolean" default="false">
+When enabled, the assistant will only respond using information from the connected knowledge base.
+</ParamField>
+
+<Info>
+In normal mode, you can configure Trigger Keywords on the connected knowledge base to automatically start a KB search when those words or phrases appear in user messages.
+</Info>
+
+### Trigger Keywords
+
+Set up automatic knowledge base lookups:
+
+<ParamField body="trigger_keywords" type="array">
+Add words or phrases that, in normal mode, will automatically trigger a knowledge base lookup.
+</ParamField>
+
+<Warning>
+Connect a knowledge base to manage trigger keywords.
+</Warning>
+
+### Instructions
+
+Define your assistant's behavior and personality:
+
+<ParamField body="instructions" type="text">
+Define your assistant's role, operating guidelines, and response style. You can use templates or write custom instructions (optional).
+</ParamField>
+
+<Example>
+**Standard AI Assistant Template**:
+- Role Definition: Responsive, intelligent AI assistant
+- Operating Guidelines: Respect boundaries, stay in scope, honor knowledge constraints
+- Positive Closures: End with supportive closing remarks
+</Example>
+
+## Knowledge Base Tab
+
+Manage the knowledge base connected to this assistant. Knowledge bases provide context and information that help your assistant give more accurate responses.
+
+### Create Knowledge Base
+
+<ParamField body="create_kb" type="button">
+Create a knowledge base specifically for this assistant. It will be automatically connected and ready to use.
+</ParamField>
+
+<Info>
+Creating a knowledge base through this tab will:
+- Automatically connect it to this assistant
+- Make it immediately available for use
+- Allow you to manage it from the Configuration tab
+</Info>
+
+### No Knowledge Base Connected
+
+If no knowledge base is connected, you'll see:
+- "No Knowledge Base Connected" message
+- "Create Knowledge Base" button
+
+<Tip>
+Knowledge bases are essential for domain-specific assistants. They provide the information your assistant needs to give accurate, helpful responses.
+</Tip>
+
+## Tools Tab
+
+Tools allow the agent to get up to date information from the apps you work in.
+
+### Available Integrations
+
+#### Atlassian (Jira & Confluence)
+- Access Jira issues and Confluence pages with official Atlassian MCP server
+- Connect button to enable integration
+
+#### HubSpot
+- CRM and marketing automation
+- Connect button to enable integration
+
+<Tip>
+Connect tools to give your assistant access to real-time data from your business applications.
+</Tip>
+
+## Best Practices
+
+### 1. Choose the Right Model
+
+- **GPT-4o**: Best for general-purpose assistants
+- **GPT-5**: Excellent for complex reasoning and analysis
+- **Gemini 2.0 Flash**: Good for creative tasks and content generation
+
+### 2. Configure Strict Mode Appropriately
+
+- **Enable Strict Mode** when you want responses based only on your knowledge base
+- **Disable Strict Mode** when you want the assistant to use general knowledge as well
+
+### 3. Use Trigger Keywords Effectively
+
+- Add domain-specific terms that should always trigger knowledge base searches
+- Include product names, technical terms, and company-specific language
+
+### 4. Write Clear Instructions
+
+- Be specific about your assistant's role and limitations
+- Include examples of good responses
+- Set clear boundaries for what the assistant should and shouldn't do
+
+## Next Steps
+
+<CardGroup cols={2}>
+<Card title="Style Your Assistant" icon="palette" href="/user-guide/assistant-styling">
+  Customize the appearance and messaging of your assistant.
+</Card>
+
+<Card title="Share Your Assistant" icon="share" href="/user-guide/assistant-sharing">
+  Choose how to share your assistant with users.
+</Card>
+
+<Card title="Knowledge Base Management" icon="database" href="/user-guide/creating-knowledge-bases">
+  Learn how to create and manage knowledge bases.
+</Card>
+
+<Card title="MCP Integrations" icon="plug" href="/integrations/mcp-overview">
+  Set up MCP integrations with external tools.
+</Card>
+</CardGroup>

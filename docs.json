@@ -45,9 +45,9 @@
             "group": "AI Assistants",
             "pages": [
               "user-guide/creating-assistants",
-              "user-guide/configuring-assistants",
-              "user-guide/deploying-assistants",
-              "user-guide/managing-assistants"
+              "user-guide/assistant-configuration",
+              "user-guide/assistant-styling",
+              "user-guide/assistant-sharing"
             ]
           },
           {
