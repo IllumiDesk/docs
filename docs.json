@@ -187,7 +187,7 @@
     "primary": {
       "type": "button",
       "label": "Get Started",
-      "href": "https://app.illumichat.com/signup"
+      "href": "https://app.illumichat.com/auth/register"
     }
   },
   "contextual": {
@@ -204,8 +204,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/illumichat",
-      "github": "https://github.com/illumichat",
+      "x": "https://x.com/illumichathq",
+      "github": "https://github.com/illumidesk",
       "linkedin": "https://linkedin.com/company/illumichat"
     }
   }
