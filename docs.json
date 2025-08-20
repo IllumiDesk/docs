@@ -37,9 +37,7 @@
           {
             "group": "Account Management",
             "pages": [
-              "user-guide/account-setup",
-              "user-guide/managing-profiles",
-              "user-guide/billing"
+              "concepts/authentication"
             ]
           },
           {
@@ -60,18 +58,13 @@
           {
             "group": "Knowledge Bases",
             "pages": [
-              "user-guide/creating-knowledge-bases",
-              "user-guide/uploading-content",
-              "user-guide/organizing-content",
-              "user-guide/knowledge-base-settings"
+              "concepts/knowledge-bases"
             ]
           },
           {
             "group": "Integrations",
             "pages": [
-              "user-guide/mcp-hubspot",
-              "user-guide/mcp-jira",
-              "user-guide/other-integrations"
+              "integrations/mcp-overview"
             ]
           }
         ]
@@ -84,30 +77,6 @@
             "pages": [
               "api-reference/authentication"
             ]
-          },
-          {
-            "group": "Assistants",
-            "pages": [
-              "api-reference/assistants/create",
-              "api-reference/assistants/list",
-              "api-reference/assistants/update",
-              "api-reference/assistants/delete"
-            ]
-          },
-          {
-            "group": "Knowledge Bases",
-            "pages": [
-              "api-reference/knowledge-bases/create",
-              "api-reference/knowledge-bases/upload",
-              "api-reference/knowledge-bases/query"
-            ]
-          },
-          {
-            "group": "Chat",
-            "pages": [
-              "api-reference/chat/send-message",
-              "api-reference/chat/stream-messages"
-            ]
           }
         ]
       },
@@ -117,18 +86,10 @@
           {
             "group": "MCP (Model Context Protocol)",
             "pages": [
-              "integrations/mcp-overview",
-              "integrations/mcp-hubspot-setup",
-              "integrations/mcp-jira-setup"
+              "integrations/mcp-overview"
             ]
           },
-          {
-            "group": "Webhooks",
-            "pages": [
-              "integrations/webhooks-setup",
-              "integrations/webhook-events"
-            ]
-          }
+
         ]
       },
       {
@@ -137,10 +98,7 @@
           {
             "group": "Common Issues",
             "pages": [
-              "troubleshooting/authentication-issues",
-              "troubleshooting/assistant-issues",
-              "troubleshooting/knowledge-base-issues",
-              "troubleshooting/integration-issues"
+              "troubleshooting/faq"
             ]
           },
           {
