@@ -87,13 +87,16 @@ Upload existing documentation and content:
 <CodeGroup>
 ```bash Supported Formats
 PDF files (.pdf)
+PowerPoint files (.pptx) - automatically converted to PDF
 Word documents (.docx)
 Text files (.txt)
 Markdown files (.md)
+Images (JPEG, PNG, GIF, WebP)
 ```
 
 ```bash File Size Limits
-Individual files: Up to 10MB
+Individual files: Up to 48MB
+Files over 48MB: Automatically split for processing
 Total storage: Varies by plan
 ```
 </CodeGroup>
@@ -106,6 +109,15 @@ Add online resources to your knowledge base:
 - **Blog Posts**: Include articles and blog content
 - **Documentation Sites**: Add technical documentation
 - **Knowledge Articles**: Include help center content
+
+### Cloud Storage Integrations
+
+Connect to your existing cloud storage:
+
+- **Google Drive**: Import files directly from Google Drive
+- **OneDrive**: Access Microsoft OneDrive files
+- **SharePoint**: Import SharePoint documents
+- **Other cloud storage**: Through integration services
 
 <Warning>
 Only crawl websites you own or have permission to use. Respect robots.txt and rate limits.
@@ -220,19 +232,19 @@ For private data analysis, use MCP tools in your workspace instead of knowledge 
 ## Next Steps
 
 <CardGroup cols={2}>
-<Card title="Create Your First Knowledge Base" icon="plus" href="/user-guide/creating-knowledge-bases">
-  Learn how to set up and organize your knowledge base.
+<Card title="Assistant Configuration" icon="settings" href="/user-guide/assistant-configuration">
+  Learn how to connect knowledge bases to your assistants.
 </Card>
 
-<Card title="Upload Content" icon="upload" href="/user-guide/uploading-content">
-  Step-by-step guide to adding documents and content.
+<Card title="Creating Assistants" icon="plus" href="/user-guide/creating-assistants">
+  Create AI assistants that can use your knowledge base.
 </Card>
 
-<Card title="Organize Content" icon="folder" href="/user-guide/organizing-content">
-  Best practices for organizing and structuring your knowledge.
+<Card title="Data Retrieval Methods" icon="database" href="/concepts/data-retrieval-methods">
+  Understand the differences between knowledge base and MCP data access.
 </Card>
 
-<Card title="Knowledge Base Settings" icon="settings" href="/user-guide/knowledge-base-settings">
-  Configure search settings and content management options.
+<Card title="Workspace" icon="layout" href="/user-guide/workspace">
+  Use the workspace to interact with your knowledge base data.
 </Card>
 </CardGroup>
