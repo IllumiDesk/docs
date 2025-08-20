@@ -35,7 +35,11 @@ When enabled, the assistant will only respond using information from the connect
 </ParamField>
 
 <Info>
-In normal mode, you can configure Trigger Keywords on the connected knowledge base to automatically start a KB search when those words or phrases appear in user messages.
+**Strict Mode Options:**
+- **Enabled**: Assistant only uses knowledge base information (more accurate but limited)
+- **Disabled**: Assistant can use both knowledge base and general knowledge (more flexible)
+
+This option only appears after you've connected a knowledge base and it has synced data.
 </Info>
 
 ### Trigger Keywords
@@ -47,8 +51,12 @@ Add words or phrases that, in normal mode, will automatically trigger a knowledg
 </ParamField>
 
 <Warning>
-Connect a knowledge base to manage trigger keywords.
+Trigger keywords only work when Strict Mode is disabled. Connect a knowledge base with synced data to access this feature.
 </Warning>
+
+<Tip>
+Use trigger keywords for domain-specific terms, product names, technical jargon, or any words that should always prompt a knowledge base search.
+</Tip>
 
 ### Instructions
 
@@ -69,27 +77,63 @@ Define your assistant's role, operating guidelines, and response style. You can 
 
 Manage the knowledge base connected to this assistant. Knowledge bases provide context and information that help your assistant give more accurate responses.
 
-### Create Knowledge Base
+### Getting Started with Knowledge Bases
 
-<ParamField body="create_kb" type="button">
-Create a knowledge base specifically for this assistant. It will be automatically connected and ready to use.
-</ParamField>
+When you first access the Knowledge Base tab, you'll see:
+
+![No Knowledge Base Connected](/images/kb-screenshots/no-knowledge-base.png)
+
+This shows that no knowledge base is currently connected to your assistant.
+
+### Creating Your First Knowledge Base
+
+Click the "Create Knowledge Base" button to get started:
+
+![Create Knowledge Base](/images/kb-screenshots/create-knowledge-base.png)
+
+This will create a new knowledge base specifically for this assistant and automatically connect it.
+
+### Selecting an Existing Knowledge Base
+
+If you already have knowledge bases, you can select from existing ones:
+
+![Select Knowledge Base](/images/kb-screenshots/select-knowledge-base.png)
+
+Choose the knowledge base that best fits your assistant's purpose.
+
+### Knowledge Base Connected
+
+Once connected, you'll see the knowledge base management interface:
+
+![Knowledge Base Connected](/images/kb-screenshots/knowledge-base-connected.png)
+
+This interface provides:
+- **Web Crawler**: Add content from websites
+- **File Uploader**: Upload documents (PDF, Word, etc.)
+- **File Importer**: Import files from various sources
+
+### Configuration Options
+
+After your knowledge base has data and is synced, additional options become available in the Configuration tab:
+
+![Strict Mode and Keywords](/images/kb-screenshots/strict-mode-keywords.png)
+
+#### Trigger Keywords (Optional)
+- Add words or phrases that automatically trigger knowledge base searches
+- Useful for domain-specific terms, product names, or technical jargon
+- Only works when Strict Mode is disabled
+
+#### Strict Mode (Optional)
+- When enabled: Assistant only uses knowledge base information
+- When disabled: Assistant can use both knowledge base and general knowledge
+- Provides more control over response accuracy vs. flexibility
 
 <Info>
-Creating a knowledge base through this tab will:
-- Automatically connect it to this assistant
-- Make it immediately available for use
-- Allow you to manage it from the Configuration tab
+Knowledge bases are essential for domain-specific assistants. They provide the information your assistant needs to give accurate, helpful responses.
 </Info>
 
-### No Knowledge Base Connected
-
-If no knowledge base is connected, you'll see:
-- "No Knowledge Base Connected" message
-- "Create Knowledge Base" button
-
 <Tip>
-Knowledge bases are essential for domain-specific assistants. They provide the information your assistant needs to give accurate, helpful responses.
+Start with a small, focused knowledge base and expand it over time based on user questions and needs.
 </Tip>
 
 ## Tools Tab
