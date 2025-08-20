@@ -99,27 +99,56 @@ Before setting up MCP integrations, ensure you have:
 
 ### Configuration Process
 
+#### Method 1: Connect via Assistant Configuration
+
 <Steps>
-<Step title="Choose Integration">
-  Select the MCP integration you want to configure from the integrations menu.
+<Step title="Access MCP Settings">
+  Navigate to your assistant's edit page and click on the "Tools" tab to find the MCP integration section.
+  
+  ![Assistant Provider List](/images/mcp-assistant-screenshots/assistant-provider-list.png)
+  
+  <Info>
+  **Important**: You cannot connect MCP tools to the default "IllumiChat" assistant. Make sure you're configuring a custom assistant.
+  </Info>
 </Step>
 
-<Step title="Provide Credentials">
-  Enter the necessary authentication credentials and connection details.
+<Step title="Initiate Connection">
+  Click "Connect" next to the desired service (e.g., Jira). This will open the OAuth authorization modal.
+  
+  ![Jira OAuth Modal](/images/mcp-assistant-screenshots/jira-oauth-modal.png)
+</Step>
+
+<Step title="Authorize Access">
+  Select your account from the dropdown menu and click "Accept" to grant the necessary permissions.
+  
+  ![Jira OAuth Accept](/images/mcp-assistant-screenshots/jira-oauth-accept.png)
+</Step>
+
+<Step title="Confirm Success">
+  Verify that the connection was established successfully. You should see a confirmation message.
+  
+  ![Jira Connected Success](/images/mcp-assistant-screenshots/jira-connected-success.png)
 </Step>
 
 <Step title="Configure Permissions">
-  Set up what data and actions your assistant can access.
-</Step>
-
-<Step title="Test Connection">
-  Verify that the integration is working correctly with test queries.
-</Step>
-
-<Step title="Deploy to Assistant">
-  Add the MCP integration to your assistant's configuration.
+  Set up what data and actions your assistant can access in the connected system.
 </Step>
 </Steps>
+
+#### Method 2: Connect via Workspace
+
+You can also connect MCP tools directly from the workspace:
+
+1. Open your workspace
+2. Click the "+" button
+3. Select "Connect MCP Tools"
+4. Follow the same connection process as above
+
+![Connect via Workspace](/images/mcp-assistant-screenshots/alternatively-connect-workspace.png)
+
+<Tip>
+Connecting via workspace is convenient when you're already working with your data and want to add new integrations on the fly. Just make sure you're on the correct assistant - you cannot connect MCP tools to the default IllumiChat assistant.
+</Tip>
 
 ## Security Considerations
 
@@ -237,19 +266,19 @@ Begin with simple data retrieval before adding complex actions and workflows.
 ## Next Steps
 
 <CardGroup cols={2}>
-<Card title="HubSpot Setup" icon="database" href="/integrations/mcp-hubspot-setup">
-  Detailed guide to setting up HubSpot MCP integration.
+<Card title="Data Retrieval Methods" icon="database" href="/concepts/data-retrieval-methods">
+  Learn about the differences between knowledge base and MCP data access.
 </Card>
 
-<Card title="Jira Setup" icon="ticket" href="/integrations/mcp-jira-setup">
-  Step-by-step instructions for Jira MCP integration.
+<Card title="Workspace" icon="layout" href="/user-guide/workspace">
+  Use the workspace for private data analysis with MCP tools.
 </Card>
 
-<Card title="Custom MCP" icon="code" href="/integrations/custom-mcp">
-  Learn how to build your own MCP server and integration.
+<Card title="Assistant Configuration" icon="settings" href="/user-guide/assistant-configuration">
+  Configure your assistant's MCP integrations and tools.
 </Card>
 
-<Card title="API Reference" icon="book" href="/api-reference/mcp">
-  Technical documentation for MCP API endpoints and methods.
+<Card title="Creating Assistants" icon="plus" href="/user-guide/creating-assistants">
+  Learn how to create assistants that can use MCP tools.
 </Card>
 </CardGroup>
