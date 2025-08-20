@@ -26,7 +26,6 @@
             "pages": [
               "concepts/ai-assistants",
               "concepts/knowledge-bases",
-              "concepts/authentication",
               "concepts/data-retrieval-methods"
             ]
           }
@@ -54,17 +53,7 @@
           
         ]
       },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Authentication",
-            "pages": [
-              "api-reference/authentication"
-            ]
-          }
-        ]
-      },
+
       {
         "tab": "Integrations",
         "groups": [
