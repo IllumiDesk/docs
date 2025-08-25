@@ -57,4 +57,4 @@ We welcome contributions to improve our documentation:
 
 ## License
 
-This documentation is licensed under the MIT License.
+This documentation is licensed under the [Creative Commons ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en) License.
